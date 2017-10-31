@@ -1,5 +1,5 @@
 export class Suit {
     id: number;
-    tier: number;
+    cost: number;
     name: string;
 }
