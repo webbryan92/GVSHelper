@@ -107,5 +107,5 @@ export const SUITS: Suit[] = [
     { id: 104, cost: 400, name: 'Phantom Gundam' },
     { id: 105, cost: 300, name: 'Gundam Age-1' },
     { id: 106, cost: 300, name: 'Buster Gundam' },
-    { id: 107, cost: 300, name: 'Alvaaron' }
+    { id: 107, cost: 400, name: 'Alvaaron' }
 ];

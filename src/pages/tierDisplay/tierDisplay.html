@@ -1,12 +1,19 @@
 <ion-header>
     <ion-navbar>
       <ion-title>
-        TierDisplayPage
+        {{id}} Cost Suits
       </ion-title>
     </ion-navbar>
   </ion-header>
   
   <ion-content padding>
-    this is the page for {{id}}
+    <h2>{{id}} Cost Suits</h2>
+    <ul class="suits">
+      <li *ngFor="let suit of suits" >
+        <div *ngIf="suit.cost == id">
+            <span class="badge">{{suit.cost}}</span> {{suit.name}}
+        </div>        
+      </li>
+    </ul>
   </ion-content>
   
