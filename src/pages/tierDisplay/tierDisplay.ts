@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavParams } from 'ionic-angular';
-
 import { Suit } from '../../app/services/suit';
-import { SUITS } from '../../app/services/mock-suitList';
-import { TierService } from '../../app/services/tier.service'
+import { TierService } from '../../app/services/tier.service';
 
 @Component({
   selector: 'tierDisplay',
@@ -18,7 +16,7 @@ export class TierPage implements OnInit {
       this.id = params.data.costId;
   }
   getSuits(): void {
-    this.tierService.getSuits().then(suits => this.suits = suits);
+    this.tierService.getSuits(this.id).then(suits => this.suits = suits);
   }
   ngOnInit(): void {
     this.getSuits();
