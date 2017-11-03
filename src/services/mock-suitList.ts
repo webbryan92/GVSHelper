@@ -1,7 +1,7 @@
 import { Suit } from './suit';
 
 export const SUITS: Suit[] = [
-    { id: 1, cost: 400, name: 'Gundam' },
+    { id: 1, cost: 400, name: 'RX-78 Gundam' },
     { id: 2, cost: 300, name: 'Guncannon' },
     { id: 3, cost: 200, name: 'Guntank' },
     { id: 4, cost: 200, name: 'Doan Zaku' },
@@ -43,7 +43,7 @@ export const SUITS: Suit[] = [
     { id: 40, cost: 200, name: 'Berga Giros' },
     { id: 41, cost: 500, name: 'V2 Gundam' },
     { id: 42, cost: 200, name: 'Gun-EZ' },
-    { id: 43, cost: 500, name: 'Gottrlatan' },
+    { id: 43, cost: 400, name: 'Gottrlatan' },
     { id: 44, cost: 500, name: 'Wing Zero' },
     { id: 45, cost: 300, name: 'Deathscythe' },
     { id: 46, cost: 300, name: 'Heavyarms' },

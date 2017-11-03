@@ -8,10 +8,11 @@
   
   <ion-content padding>
     <h2>{{id}} Cost Suits</h2>
-    <ul class="suits">
-      <li *ngFor="let suit of suits" >
-            <span class="badge">{{suit.name}}</span>             
-      </li>
-    </ul>
+    <ion-list>
+      <ion-item *ngFor="let suit of suits | async" [hidden]=filter(suit)>
+              {{suit.payload.val().cost}}<br>
+              {{suit.payload.val().name}}            
+            </ion-item>
+          </ion-list>
   </ion-content>
   
