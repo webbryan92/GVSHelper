@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TierPage } from '../pages/tierDisplay/tierDisplay';
+import { SuitPage } from '../pages/suitDisplay/suitDisplay';
 
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../environment';
@@ -19,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     TierPage,
+    SuitPage,
     TabsPage
   ],
   imports: [
@@ -32,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     TierPage,
+    SuitPage,
     TabsPage
   ],
   providers: [
