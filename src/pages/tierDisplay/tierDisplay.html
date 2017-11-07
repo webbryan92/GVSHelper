@@ -7,16 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-      <ng-container *ngFor="let suit of suits | async">
-        <ng-container *ngIf="filter(suit)">
-              <button ion-button *ngIf="filter(suit)">
-                <div>
-                  <ion-icon name="star"></ion-icon>
-                  {{suit.payload.val().name}}
-                </div>
-              </button>
-        </ng-container>
+  <ion-grid>
+    <ion-row>
+      <ng-container *ngFor="let suit of suits | async">        
+          <ion-col col-4
+          padding
+          align-self-start
+          tappable
+          align="center"
+          *ngIf="filter(suit)"
+          (click)="viewSuit(suit)">
+          <ion-img width="128" height="128" src="../assets/imgs/Gundam-Thumbnail.png"></ion-img>
+          <p>
+          {{suit.payload.val().name}}
+          </p>
+          </ion-col>
       </ng-container>
-  </ion-list>
+    </ion-row>
+  </ion-grid>
 </ion-content>
