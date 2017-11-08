@@ -1,7 +1,7 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" [rootParams] = "{'costId': '500'}" tabTitle="500" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab2Root" [rootParams] = "{'costId': '400'}" tabTitle="400" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" [rootParams] = "{'costId': '300'}" tabTitle="300" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab4Root" [rootParams] = "{'costId': '200'}" tabTitle="200" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="termsRoot" tabTitle="Terms" tabIcon="information-circle"></ion-tab>
+<ion-tabs ionChange="transition($event)">
+  <ion-tab  [root]="tab1Root" [rootParams] = "{'costId': '500'}" tabTitle="500" tabIcon="information-circle"></ion-tab>
+  <ion-tab  [root]="tab2Root" [rootParams] = "{'costId': '400'}" tabTitle="400" tabIcon="information-circle"></ion-tab>
+  <ion-tab  [root]="tab3Root" [rootParams] = "{'costId': '300'}" tabTitle="300" tabIcon="information-circle"></ion-tab>
+  <ion-tab  [root]="tab4Root" [rootParams] = "{'costId': '200'}" tabTitle="200" tabIcon="information-circle"></ion-tab>
+  <ion-tab  [root]="termsRoot" tabTitle="Terms" tabIcon="information-circle"></ion-tab>
 </ion-tabs>

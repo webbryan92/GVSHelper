@@ -1,0 +1,441 @@
+{
+    "Suits": {
+        "1": {
+            "cost": 400,
+            "name": "RX-78 Gundam",
+            "pilots": {
+                "pilot": "Amuro Ray"
+            }
+        },
+        "2": {
+            "cost": 300,
+            "name": "Guncannon",
+            "pilots": {
+                "pilot": "Kai Shiden"
+            }
+        },
+        "3": {
+            "cost": 200,
+            "name": "Guntank",
+            "pilots": {
+                "pilot": "Kai Shiden"
+            }
+        },
+        "4": {
+            "cost": 200,
+            "name": "Doan Zaku"
+        },
+        "5": {
+            "cost": 200,
+            "name": "Char's Zaku 2"
+        },
+        "6": {
+            "cost": 300,
+            "name": "Char's Gelgoog"
+        },
+        "7": {
+            "cost": 400,
+            "name": "Zeong"
+        },
+        "8": {
+            "cost": 300,
+            "name": "Gouf"
+        },
+        "9": {
+            "cost": 300,
+            "name": "Gyan"
+        },
+        "10": {
+            "cost": 200,
+            "name": "Rick Dom"
+        },
+        "11": {
+            "cost": 500,
+            "name": "Zeta Gundam"
+        },
+        "12": {
+            "cost": 400,
+            "name": "Hyaku Shiki"
+        },
+        "13": {
+            "cost": 300,
+            "name": "AEUG Gundam Mk2"
+        },
+        "14": {
+            "cost": 200,
+            "name": "Rick Dias"
+        },
+        "15": {
+            "cost": 200,
+            "name": "Methuss"
+        },
+        "16": {
+            "cost": 200,
+            "name": "Nemo"
+        },
+        "17": {
+            "cost": 300,
+            "name": "Titan's Gundam Mk2"
+        },
+        "18": {
+            "cost": 500,
+            "name": "The O"
+        },
+        "19": {
+            "cost": 300,
+            "name": "Mesalla"
+        },
+        "20": {
+            "cost": 300,
+            "name": "Gabthley"
+        },
+        "21": {
+            "cost": 200,
+            "name": "Marasai"
+        },
+        "22": {
+            "cost": 200,
+            "name": "Hi-Zack"
+        },
+        "23": {
+            "cost": 500,
+            "name": "Full Armor ZZ"
+        },
+        "24": {
+            "cost": 400,
+            "name": "ZZ Gundam"
+        },
+        "25": {
+            "cost": 500,
+            "name": "Quebley"
+        },
+        "26": {
+            "cost": 300,
+            "name": "Quebley Mk2"
+        },
+        "27": {
+            "cost": 500,
+            "name": "Nu Gundam"
+        },
+        "28": {
+            "cost": 200,
+            "name": "Re-GZ"
+        },
+        "29": {
+            "cost": 500,
+            "name": "Sazabi"
+        },
+        "30": {
+            "cost": 300,
+            "name": "Jagd Doga"
+        },
+        "31": {
+            "cost": 500,
+            "name": "Unicorn"
+        },
+        "32": {
+            "cost": 300,
+            "name": "Delta Plus"
+        },
+        "33": {
+            "cost": 300,
+            "name": "Jesta"
+        },
+        "34": {
+            "cost": 200,
+            "name": "Re-Zel"
+        },
+        "35": {
+            "cost": 500,
+            "name": "Sinanju"
+        },
+        "36": {
+            "cost": 400,
+            "name": "Banshee"
+        },
+        "37": {
+            "cost": 300,
+            "name": "Kshatriya"
+        },
+        "38": {
+            "cost": 400,
+            "name": "F91 Gundam"
+        },
+        "39": {
+            "cost": 200,
+            "name": "Vigna Ghina"
+        },
+        "40": {
+            "cost": 200,
+            "name": "Berga Giros"
+        },
+        "41": {
+            "cost": 500,
+            "name": "V2 Gundam"
+        },
+        "42": {
+            "cost": 200,
+            "name": "Gun-EZ"
+        },
+        "43": {
+            "cost": 400,
+            "name": "Gottrlatan"
+        },
+        "44": {
+            "cost": 500,
+            "name": "Wing Zero"
+        },
+        "45": {
+            "cost": 300,
+            "name": "Deathscythe"
+        },
+        "46": {
+            "cost": 300,
+            "name": "Heavyarms"
+        },
+        "47": {
+            "cost": 300,
+            "name": "Sandrock"
+        },
+        "48": {
+            "cost": 300,
+            "name": "Altron"
+        },
+        "49": {
+            "cost": 500,
+            "name": "Epyon"
+        },
+        "50": {
+            "cost": 400,
+            "name": "Tallgeese II"
+        },
+        "51": {
+            "cost": 300,
+            "name": "Tallgeese I"
+        },
+        "52": {
+            "cost": 500,
+            "name": "Turn A Gundam"
+        },
+        "53": {
+            "cost": 200,
+            "name": "Green Kapool"
+        },
+        "54": {
+            "cost": 300,
+            "name": "Red Kapool"
+        },
+        "55": {
+            "cost": 500,
+            "name": "Turn X Gundam"
+        },
+        "56": {
+            "cost": 300,
+            "name": "Gold Sumo"
+        },
+        "57": {
+            "cost": 200,
+            "name": "Silver Sumo"
+        },
+        "58": {
+            "cost": 400,
+            "name": "Freedom Gundam"
+        },
+        "59": {
+            "cost": 300,
+            "name": "Strike Gundam"
+        },
+        "60": {
+            "cost": 400,
+            "name": "Providence Gundam"
+        },
+        "61": {
+            "cost": 300,
+            "name": "Forbidden Gundam"
+        },
+        "62": {
+            "cost": 300,
+            "name": "Duel Gundam"
+        },
+        "63": {
+            "cost": 300,
+            "name": "Blitz Gundam"
+        },
+        "64": {
+            "cost": 300,
+            "name": "Gundam Exia"
+        },
+        "65": {
+            "cost": 300,
+            "name": "Gundam Dynames"
+        },
+        "66": {
+            "cost": 300,
+            "name": "Gundam Kyrios"
+        },
+        "67": {
+            "cost": 300,
+            "name": "Throne Eins"
+        },
+        "68": {
+            "cost": 300,
+            "name": "Throne Zwei"
+        },
+        "69": {
+            "cost": 300,
+            "name": "Throne Drei"
+        },
+        "70": {
+            "cost": 300,
+            "name": "Union Flag"
+        },
+        "71": {
+            "cost": 200,
+            "name": "Tieren Taozi"
+        },
+        "72": {
+            "cost": 200,
+            "name": "GN-X"
+        },
+        "73": {
+            "cost": 400,
+            "name": "G-Self"
+        },
+        "74": {
+            "cost": 300,
+            "name": "G-Arcane"
+        },
+        "75": {
+            "cost": 300,
+            "name": "Mac Knife"
+        },
+        "76": {
+            "cost": 300,
+            "name": "Barbatos"
+        },
+        "77": {
+            "cost": 300,
+            "name": "Kimaris Trooper"
+        },
+        "78": {
+            "cost": 300,
+            "name": "Ez-8"
+        },
+        "79": {
+            "cost": 200,
+            "name": "Ground Gundam"
+        },
+        "80": {
+            "cost": 300,
+            "name": "Gouf Custom"
+        },
+        "81": {
+            "cost": 400,
+            "name": "Full Armor Gundam"
+        },
+        "82": {
+            "cost": 400,
+            "name": "Psycho Zaku"
+        },
+        "83": {
+            "cost": 300,
+            "name": "Slave Wraith"
+        },
+        "84": {
+            "cost": 300,
+            "name": "Vincent's Gelgoog"
+        },
+        "85": {
+            "cost": 300,
+            "name": "GP01"
+        },
+        "86": {
+            "cost": 400,
+            "name": "GP02"
+        },
+        "87": {
+            "cost": 400,
+            "name": "GP03"
+        },
+        "88": {
+            "cost": 200,
+            "name": "GM Custom"
+        },
+        "89": {
+            "cost": 400,
+            "name": "GM Cannon II"
+        },
+        "90": {
+            "cost": 400,
+            "name": "Gundam Crossbone X-1 Kai"
+        },
+        "91": {
+            "cost": 300,
+            "name": "Gundam Crossbone X-2 Kai"
+        },
+        "92": {
+            "cost": 400,
+            "name": "Gundam Crossbone X-3"
+        },
+        "93": {
+            "cost": 500,
+            "name": "X-1 Full Cloth"
+        },
+        "94": {
+            "cost": 500,
+            "name": "Hi-Nu Gundam"
+        },
+        "95": {
+            "cost": 500,
+            "name": "Hot Scramble Gundam"
+        },
+        "96": {
+            "cost": 400,
+            "name": "Barbatos Lupus"
+        },
+        "97": {
+            "cost": 300,
+            "name": "Gundam Virtue"
+        },
+        "98": {
+            "cost": 400,
+            "name": "Pale Rider"
+        },
+        "99": {
+            "cost": 300,
+            "name": "Gusion Rebake"
+        },
+        "100": {
+            "cost": 500,
+            "name": "G-Self Perfect Pack"
+        },
+        "101": {
+            "cost": 400,
+            "name": "Baund Doc"
+        },
+        "102": {
+            "cost": 400,
+            "name": "Perfect Strike"
+        },
+        "103": {
+            "cost": 500,
+            "name": "Nightingale"
+        },
+        "104": {
+            "cost": 400,
+            "name": "Phantom Gundam"
+        },
+        "105": {
+            "cost": 300,
+            "name": "Gundam Age-1"
+        },
+        "106": {
+            "cost": 300,
+            "name": "Buster Gundam"
+        },
+        "107": {
+            "cost": 400,
+            "name": "Alvaaron"
+        }
+    }
+}
