@@ -9,30 +9,127 @@
             },
             "Shooting": {
                 "Main": {
-                    "Name": "",
-                    "Ammo": "",
-                    "Damage": "",
-                    "Routes": "",
-                    "Notes": ""
+                    "Name": "Beam Rifle",
+                    "Ammo": "7",
+                    "Damage": "70",
+                    "Cancels": "AB,AC,BC",
+                    "Vernier": "No",
+                    "Notes": "Over-the-shoulder shot when facing away"
                 },
                 "Sub Weapon": {
-                    "Name": "",
-                    "Ammo": "",
-                    "Damage": "",
-                    "Routes": "",
+                    "Name": "Hyper Bazooka",
+                    "Ammo": "3",
+                    "Damage": "99",
+                    "Cancels": "AC",
+                    "Vernier": "Yes",
                     "Notes": ""
                 },
-                "Fire Special Weapon": {
-                    "Name": "",
-                    "Ammo": "",
-                    "Damage": "",
-                    "Routes": "",
-                    "Notes": ""
+                "Special Weapon": {
+                    "Name": "Beam Javelin",
+                    "Ammo": "-",
+                    "Damage": "90-140-190",
+                    "Routes": "-",
+                    "Vernier": "Yes",
+                    "Notes": "Hold input to charge"
+                },
+                "Special Melee":{
+                    "Name": "Gundam Hammer",
+                    "Ammo": "-",
+                    "Damage": "24 to 114",
+                    "Routes": "-",
+                    "Vernier": "Yes",
+                    "Notes": "Multi hit"
+                },
+                "Charge Shot A": {
+                    "Name": "Beam Rifle(Sniper)",
+                    "Ammo": "-",
+                    "Damage": "120",
+                    "Routes": "-",
+                    "Vernier": "Yes",
+                    "Notes": "High Velocity"
                 }
             },
             "Fighting": {
+                "Neutral Melee": {
+                    "1": {
+                        "Name": "Beam Saber",
+                        "Input": "NNN",
+                        "Damage": "173",
+                        "Routes": "BC(1-2nd hit)",
+                        "Steppable": "yes",
+                        "Notes": ""
+                    },
+                    "2": {
+                        "Name": "Beam Saber",
+                        "Input": "BB(8)BB",
+                        "Damage": "215",
+                        "Routes": "BC(1-3rd hit)",
+                        "Steppable": "yes",
+                        "Notes": ""
+                    }
+                },
+                "Forward Melee": {
+                    "1": {
+                        "Name": "Beam Saber Puncture",
+                        "Input": "8B",
+                        "Damage": "84",
+                        "Routes": "BC",
+                        "Steppable": "yes",
+                        "Notes": ""
+                },
+                "Side Melee":{
+                    "1": {
+                        "Name": "Gundam Hammer",
+                        "Input": "6BB",
+                        "Damage": "154",
+                        "Routes": "BC(1-2nd hit)",
+                        "Steppable": "yes",
+                        "Notes": "Wide swing, beside and behind"
+                },
+                "Back Melee": {
+                    "1": {
+                        "Name": "Battle Counter",
+                        "Input": "2B",
+                        "Damage": "80",
+                        "Routes": "-",
+                        "Steppable": "yes",
+                        "Notes": "Pushes forward after a delay blocking shots"
+                    },
+                    "2": {
+                        "Name": "Shield Throw and Leap",
+                        "Input": "2B-A-B",
+                        "Damage": "215",
+                        "Routes": "55(throw)-135(Leap)",
+                        "Steppable": "No",
+                        "Notes": "Shield throw will stun, Shield Throw not steppable"
+                    }
+                },
+                "Boost Dash Melee": {
+                    "1": {
+                        "Name": "Combination attack",
+                        "Input": "BD8BBB",
+                        "Damage": "190",
+                        "Routes": "-",
+                        "Notes": ""
+                    }
+                },
+                "Special Fighting": {
+                    "1": {
+                        "Name": "Stomp",
+                        "Input": "BC during melee",
+                        "Damage": "147 to 210",
+                        "Routes": "-",
+                        "Notes": "Usable during most melee, Ground bounces"
+                    }
+                }
             },
             "Special": {
+                "1": {
+                    "Name": "Last Shooting",
+                    "Input": "ABC",
+                    "Damage": "296/274",
+                    "Notes": "Two Stage Super, slash then Shot"
+                }
             }            
         },
         "1": {
@@ -812,3 +909,4 @@
         }
     }
 }
+

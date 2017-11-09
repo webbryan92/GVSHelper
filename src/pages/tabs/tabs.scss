@@ -1,0 +1,112 @@
+tabs-page{
+    .tabbar, .tabs-ios, .tabs-md , .tabs-wp{
+        .tab-button-icon {
+            background-repeat:no-repeat;
+            background-position:center;
+            height:40px;
+            width: 100px;
+            background-size:contain;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            &:before {
+                display:none;
+            }
+        }
+    }
+    
+    .tabs-ios {
+      a[aria-selected=false]{
+         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
+          background-image: url(../assets/imgs/500small.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
+          background-image: url(../assets/imgs/400.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
+          background-image: url(../assets/imgs/300.png);
+        }
+      }
+     a[aria-selected=true] {
+       //führ eventuellen text
+       //span {
+          //color: #f00; //whatever colour you want to use for the text
+        //}
+        .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
+          background-image: url(../assets/imgs/500small.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
+          background-image: url(../assets/imgs/400.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
+          background-image: url(../assets/imgs/300.png);
+        }
+      }
+    }
+    
+    .tabs-md {
+      a[aria-selected=false]{
+         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label="icon500"] {
+          background-image: url(../assets/imgs/500small.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
+          background-image: url(../assets/imgs/400.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
+          background-image: url(../assets/imgs/300.png);
+        }
+      }
+    
+     a[aria-selected=true] {
+       //führ eventuellen text
+       //span {
+          //color: #f00; //whatever colour you want to use for the text
+        //}
+        .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
+          background-image: url(../assets/imgs/500small.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
+          background-image: url(../assets/imgs/400.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
+          background-image: url(../assets/imgs/300.png);
+        }
+      }
+    }
+    
+    .tabs-wp {
+      a[aria-selected=false]{
+        .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label="icon500"] {
+          background-image: url(../assets/imgs/500small.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
+          background-image: url(../assets/imgs/400.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
+          background-image: url(../assets/imgs/300.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
+            background-image: url(../assets/imgs/300.png);
+        }
+      }
+    
+     a[aria-selected=true] {
+       //führ eventuellen text
+       //span {
+          //color: #f00; //whatever colour you want to use for the text
+        //}
+        .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
+          background-image: url(../assets/imgs/500.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
+          background-image: url(../assets/imgs/400.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
+          background-image: url(../assets/imgs/300.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
+          background-image: url(../assets/imgs/200.png);
+        }
+      }
+    }
+}
