@@ -1,10 +1,31 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>
+      <ion-title align-center>
             {{suit.payload.val().name}}
       </ion-title>
     </ion-navbar>
   </ion-header>
 
   <ion-content padding>
+    <h4>Suit: </h4> {{suit.payload.val().name}}
+    <h4>Cost: </h4> {{suit.payload.val().cost}}
+    <h4>Pilots:</h4>
+    <ng-container *ngFor="let pilot of pilots | async">
+      {{pilot.payload.val()}}<br>
+    </ng-container>
+    <br>
+    <table style="width:100%">
+      <caption> Shooting</caption>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Ammo</th>
+        <th>Damage</th>
+        <th>Vernier</th>
+        <th>Routes</th>
+      </tr>
+      <tr>
+        <th>Charge Shot A</th>
+      </tr>
+    </table>
   </ion-content>

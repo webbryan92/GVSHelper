@@ -26,12 +26,11 @@ tabs-page{
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
           background-image: url(../assets/imgs/300.png);
         }
+        .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
+          background-image: url(../assets/imgs/200.png);
+        }
       }
      a[aria-selected=true] {
-       //führ eventuellen text
-       //span {
-          //color: #f00; //whatever colour you want to use for the text
-        //}
         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
           background-image: url(../assets/imgs/500small.png);
         }
@@ -40,6 +39,9 @@ tabs-page{
         }
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
           background-image: url(../assets/imgs/300.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
+          background-image: url(../assets/imgs/200.png);
         }
       }
     }
@@ -55,13 +57,12 @@ tabs-page{
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
           background-image: url(../assets/imgs/300.png);
         }
+        .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
+          background-image: url(../assets/imgs/200.png);
+        }
       }
     
      a[aria-selected=true] {
-       //führ eventuellen text
-       //span {
-          //color: #f00; //whatever colour you want to use for the text
-        //}
         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
           background-image: url(../assets/imgs/500small.png);
         }
@@ -70,6 +71,9 @@ tabs-page{
         }
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
           background-image: url(../assets/imgs/300.png);
+        }
+        .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
+          background-image: url(../assets/imgs/200.png);
         }
       }
     }
@@ -85,16 +89,12 @@ tabs-page{
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
           background-image: url(../assets/imgs/300.png);
         }
-        .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
-            background-image: url(../assets/imgs/300.png);
+        .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
+            background-image: url(../assets/imgs/200.png);
         }
       }
     
      a[aria-selected=true] {
-       //führ eventuellen text
-       //span {
-          //color: #f00; //whatever colour you want to use for the text
-        //}
         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
           background-image: url(../assets/imgs/500.png);
         }

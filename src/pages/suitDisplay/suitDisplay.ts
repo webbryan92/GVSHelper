@@ -1,18 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NavParams } from 'ionic-angular';
-import { TierService } from '../../services/tier.service';
+import { SuitService } from '../../services/suit.service';
 import { Observable } from 'rxjs';
 
 
 @Component({
   selector: 'suitDisplay',
   templateUrl: 'suitDisplay.html',
-  providers: [TierService]
+  providers: [SuitService]
 })
 export class SuitPage {
+    object: any;
     suit: any;
-  constructor(public navCtrl: NavController, public params:NavParams) {
-      this.suit = params.get('suit');
+    pilots: any;
+  constructor(public navCtrl: NavController, public params:NavParams, private suitService: SuitService) {
+      this.suit = params.get('suit');      
+  }
+  ngOnInit(): void {
+    this.pilots = this.suitService.getPilots(this.suit.key);
   }
 }
