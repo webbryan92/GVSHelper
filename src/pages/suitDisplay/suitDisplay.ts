@@ -11,13 +11,20 @@ import { Observable } from 'rxjs';
   providers: [SuitService]
 })
 export class SuitPage {
-    object: any;
-    suit: any;
-    pilots: any;
-  constructor(public navCtrl: NavController, public params:NavParams, private suitService: SuitService) {
-      this.suit = params.get('suit');      
+  public suitRef: any;
+  public suit: any;
+  public pilots: any;
+
+  constructor(
+    public navCtrl: NavController,
+    public params: NavParams,
+    private suitService: SuitService
+  ) {
+    this.suitRef = params.get('suit');
+    this.suit = this.suitService.getSuit(this.suitRef.key);
   }
+
   ngOnInit(): void {
-    this.pilots = this.suitService.getPilots(this.suit.key);
+    this.pilots = this.suitService.getPilots(this.suitRef.key);
   }
 }

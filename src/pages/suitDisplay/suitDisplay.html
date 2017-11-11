@@ -1,17 +1,17 @@
 <ion-header>
     <ion-navbar>
       <ion-title align-center>
-            {{suit.payload.val().name}}
+            {{(suit | async).name}}
       </ion-title>
     </ion-navbar>
   </ion-header>
 
   <ion-content padding>
-    <h4>Suit: </h4> {{suit.payload.val().name}}
-    <h4>Cost: </h4> {{suit.payload.val().cost}}
+    <h4>Suit: </h4> {{(suit | async).name}}
+    <h4>Cost: </h4> {{(suit | async).cost}}
     <h4>Pilots:</h4>
     <ng-container *ngFor="let pilot of pilots | async">
-      {{pilot.payload.val()}}<br>
+      {{pilot}}<br>
     </ng-container>
     <br>
     <table style="width:100%">
