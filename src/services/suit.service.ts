@@ -8,4 +8,8 @@ export class SuitService{
     getPilots(suitId): Observable<any> {
         return this.afdb.list(`/Suits/${suitId}/pilots`).valueChanges();
     }
+
+    public getSuit(suitId): Observable<any> {
+      return this.afdb.object(`/Suits/${suitId}`).valueChanges();
+    }
 }

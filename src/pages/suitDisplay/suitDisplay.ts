@@ -21,7 +21,7 @@ export class SuitPage {
     private suitService: SuitService
   ) {
     this.suitRef = params.get('suit');
-    this.suit = this.suitRef.payload.val();
+    this.suit = this.suitService.getSuit(this.suitRef.key);
   }
 
   ngOnInit(): void {
