@@ -7,53 +7,58 @@
                 "0": "Amuro Ray",
                 "1": "Ryu Jose"
             },
-            "Shooting": {
-                "Main": {
-                    "Name": "Beam Rifle",
-                    "Ammo": "7",
-                    "Damage": "70",
-                    "Cancels": "AB,AC,BC",
-                    "Vernier": "No",
-                    "Notes": "Over-the-shoulder shot when facing away"
+            "shooting": {
+                "1": {
+                    "type": "Main",
+                    "name": "Beam Rifle",
+                    "ammo": "7",
+                    "damage": "70",
+                    "cancels": "AB,AC,BC",
+                    "vernier": "No",
+                    "notes": "Over-the-shoulder shot when facing away"
                 },
-                "Sub Weapon": {
-                    "Name": "Hyper Bazooka",
-                    "Ammo": "3",
-                    "Damage": "99",
-                    "Cancels": "AC",
-                    "Vernier": "Yes",
-                    "Notes": ""
+                "2": {
+                    "type": "Sub Weapon",
+                    "name": "Hyper Bazooka",
+                    "ammo": "3",
+                    "damage": "99",
+                    "cancels": "AC",
+                    "vernier": "Yes",
+                    "notes": ""
                 },
-                "Special Weapon": {
-                    "Name": "Beam Javelin",
-                    "Ammo": "-",
-                    "Damage": "90-140-190",
-                    "Routes": "-",
-                    "Vernier": "Yes",
-                    "Notes": "Hold input to charge"
+                "3": {
+                    "type": "Special Shooting",
+                    "name": "Beam Javelin",
+                    "ammo": "-",
+                    "damage": "90-140-190",
+                    "cancels": "-",
+                    "vernier": "Yes",
+                    "notes": "Hold input to charge"
                 },
-                "Special Melee": {
-                    "Name": "Gundam Hammer",
-                    "Ammo": "-",
-                    "Damage": "24 to 114",
-                    "Routes": "-",
-                    "Vernier": "Yes",
-                    "Notes": "Multi hit"
+                "4": {
+                    "type": "Special Melee",
+                    "name": "Gundam Hammer",
+                    "ammo": "-",
+                    "damage": "24 to 114",
+                    "cancels": "-",
+                    "vernier": "Yes",
+                    "notes": "Multi hit"
                 },
-                "Charge Shot A": {
-                    "Name": "Beam Rifle(Sniper)",
-                    "Ammo": "-",
-                    "Damage": "120",
-                    "Routes": "-",
-                    "Vernier": "Yes",
-                    "Notes": "High Velocity"
+                "5": {
+                    "type": "Charge Shot A",
+                    "name": "Beam Rifle(Sniper)",
+                    "ammo": "-",
+                    "damage": "120",
+                    "cancels": "-",
+                    "vernier": "Yes",
+                    "notes": "High Velocity"
                 }
             },
             "Fighting": {
                 "Neutral Melee": {
                     "1": {
                         "Name": "Beam Saber",
-                        "Input": "NNN",
+                        "Input": "BBB",
                         "Damage": "173",
                         "Routes": "BC(1-2nd hit)",
                         "Steppable": "yes",

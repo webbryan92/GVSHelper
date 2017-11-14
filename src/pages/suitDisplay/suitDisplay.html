@@ -1,21 +1,21 @@
 <ion-header>
     <ion-navbar>
       <ion-title align-center>
-            {{suit.payload.val().name}}
+            {{suit.name}}
       </ion-title>
     </ion-navbar>
   </ion-header>
 
   <ion-content padding>
-    <h4>Suit: </h4> {{suit.payload.val().name}}
-    <h4>Cost: </h4> {{suit.payload.val().cost}}
+    <h4>Suit: </h4> {{suit.name}}
+    <h4>Cost: </h4> {{suit.cost}}
     <h4>Pilots:</h4>
     <ng-container *ngFor="let pilot of pilots | async">
-      {{pilot.payload.val()}}<br>
+      {{pilot}}<br>
     </ng-container>
     <br>
     <table style="width:100%">
-      <caption> Shooting</caption>
+      <caption>Shooting</caption>
       <tr>
         <th></th>
         <th>Name</th>
@@ -24,8 +24,36 @@
         <th>Vernier</th>
         <th>Routes</th>
       </tr>
-      <tr>
-        <th>Charge Shot A</th>
-      </tr>
-    </table>
+      <ng-container *ngFor="let shot of shooting | async">
+        <tr>
+          <th>{{shot.type}}</th>
+          <td>{{shot.name}}</td>
+          <td>{{shot.ammo}}</td>
+          <td>{{shot.damage}}</td>
+          <td>{{shot.vernier}}</td>
+          <td>{{shot.cancels}}</td>
+        </tr>
+      </ng-container>
+    </table><br>
+    <table style="width:100%">
+        <caption>Melee</caption>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Ammo</th>
+          <th>Damage</th>
+          <th>Vernier</th>
+          <th>Routes</th>
+        </tr>
+        <ng-container *ngFor="let shot of shooting | async">
+          <tr>
+            <th>{{shot.type}}</th>
+            <td>{{shot.name}}</td>
+            <td>{{shot.ammo}}</td>
+            <td>{{shot.damage}}</td>
+            <td>{{shot.vernier}}</td>
+            <td>{{shot.cancels}}</td>
+          </tr>
+        </ng-container>
+      </table>
   </ion-content>
