@@ -1,59 +1,84 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title align-center>
-            {{suit.name}}
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <ion-title align-center>
+      {{suit.name}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
 
-  <ion-content padding>
-    <h4>Suit: </h4> {{suit.name}}
-    <h4>Cost: </h4> {{suit.cost}}
-    <h4>Pilots:</h4>
-    <ng-container *ngFor="let pilot of pilots | async">
-      {{pilot}}<br>
-    </ng-container>
+<ion-content padding class="grad">
+  <h4>Suit: </h4> {{suit.name}}
+  <h4>Cost: </h4> {{suit.cost}}
+  <h4>Pilots:</h4>
+  <ng-container *ngFor="let pilot of pilots | async">
+    {{pilot}}
     <br>
-    <table style="width:100%">
-      <caption>Shooting</caption>
+  </ng-container>
+  <br>
+  <table style="width:100%">
+    <caption>Shooting</caption>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Ammo</th>
+      <th>Damage</th>
+      <th>Cancels</th>
+    </tr>
+    <ng-container *ngFor="let shot of shooting | async">
+      <tr>
+        <th>{{shot.type}}</th>
+        <td>{{shot.name}}</td>
+        <td>{{shot.ammo}}</td>
+        <td>{{shot.damage}}</td>
+        <td>{{shot.cancels}}</td>
+      </tr>
+    </ng-container>
+  </table>
+  <br>
+  <table style="width:100%">
+    <caption>Melee</caption>
+    <tr>
+      <th></th>
+      <th>Input</th>
+      <th>Damage</th>
+      <th>Cancels</th>
+    </tr>
+    <ng-container *ngFor="let melee of melees | async">
+      <tr>
+        <ng-container>
+          <ng-container *ngIf="previousType(melee.type)">
+            <th></th>
+            <td>{{melee.input}}</td>
+            <td>{{melee.damage}}</td>
+            <td>{{melee.routes}}</td>
+          </ng-container>
+          <ng-container *ngIf="!previousVal">
+            <th>{{melee.type}}</th>
+            <td>{{melee.input}}</td>
+            <td>{{melee.damage}}</td>
+            <td>{{melee.routes}}</td>
+          </ng-container>
+        </ng-container>
+      </tr>
+    </ng-container>
+  </table>
+  <br>
+  <table>
+      <caption>Supers</caption>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Ammo</th>
+        <th>Input</th>
         <th>Damage</th>
-        <th>Vernier</th>
-        <th>Routes</th>
+        <th>Notes</th>
       </tr>
-      <ng-container *ngFor="let shot of shooting | async">
-        <tr>
-          <th>{{shot.type}}</th>
-          <td>{{shot.name}}</td>
-          <td>{{shot.ammo}}</td>
-          <td>{{shot.damage}}</td>
-          <td>{{shot.vernier}}</td>
-          <td>{{shot.cancels}}</td>
-        </tr>
-      </ng-container>
-    </table><br>
-    <table style="width:100%">
-        <caption>Melee</caption>
-        <tr>
-          <th></th>
-          <th>Name</th>
-          <th>Ammo</th>
-          <th>Damage</th>
-          <th>Vernier</th>
-          <th>Routes</th>
-        </tr>
-        <ng-container *ngFor="let shot of shooting | async">
+      <ng-container *ngFor="let special of specials | async">
           <tr>
-            <th>{{shot.type}}</th>
-            <td>{{shot.name}}</td>
-            <td>{{shot.ammo}}</td>
-            <td>{{shot.damage}}</td>
-            <td>{{shot.vernier}}</td>
-            <td>{{shot.cancels}}</td>
+            <th>{{special.name}}</th>
+            <td>{{special.input}}</td>
+            <td>{{special.damage}}</td>
+            <td>{{special.notes}}</td>
           </tr>
         </ng-container>
-      </table>
-  </ion-content>
+  </table>
+
+</ion-content>

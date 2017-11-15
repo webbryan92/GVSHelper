@@ -15,6 +15,12 @@ export class SuitService{
     public getRanged(suitId): Observable<any> {               
         return this.afdb.list(`/Suits/${suitId}/shooting`).valueChanges(); //unpack the ranged
     }
+    public getMelee(suitId): Observable<any> {
+        return this.afdb.list(`/Suits/${suitId}/fighting`).valueChanges();
+    }
+    public getSpecials(suitId): Observable<any> {
+        return this.afdb.list(`/Suits/${suitId}/special`).valueChanges();
+    }
     /*getSuit(suitId) {
         return Observable.combineLatest(
           this.afdb.object(`/suits/${suitId}/`).valueChanges(),

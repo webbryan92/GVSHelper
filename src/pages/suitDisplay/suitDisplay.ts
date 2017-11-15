@@ -15,6 +15,10 @@ export class SuitPage {
     public suit: any;
     public pilots: any;
     public shooting: any;
+    public melees: any;
+    public previous: any;
+    public previousVal: any;
+    public specials: any;
 
   constructor(
     public navCtrl: NavController, 
@@ -27,5 +31,16 @@ export class SuitPage {
   ngOnInit(): void {
     this.pilots = this.suitService.getPilots(this.suitRef.key);
     this.shooting = this.suitService.getRanged(this.suitRef.key);
+    this.melees = this.suitService.getMelee(this.suitRef.key);
+    this.specials = this.suitService.getSpecials(this.suitRef.key);
+  }
+  previousType(type): boolean{
+    if(type === this.previous){
+      this.previousVal = true;
+      return true      
+    }
+    this.previous = type;
+    this.previousVal = false;
+    return false
   }
 }

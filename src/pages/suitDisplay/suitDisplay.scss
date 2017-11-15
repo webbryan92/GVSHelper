@@ -2,6 +2,8 @@ suitDisplay{
     table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
+        text-align: center;
+        padding: 2px 3px 2px 3px;
     }
     ion-title {
         position: absolute;
@@ -11,5 +13,8 @@ suitDisplay{
         width: 100%;
         height: 100%;
         text-align: center;
-      }
+    }
+    .grad {
+        background-image: linear-gradient(to bottom right, #BBBBBB, #CCCCCC);        
+    }
 }

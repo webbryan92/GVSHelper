@@ -1,9 +1,12 @@
 tierDisplay {
+  .grad {
+    background-image: linear-gradient(to bottom right, #BBBBBB, #CCCCCC);    
+  }
     ion-icon {
       font-size: 5rem;
       margin-bottom: 1rem;
     }
-p {
+    p {
       font-size: 1.5rem;
       margin: 0;
       font-family: Campton, sans-serif;

@@ -54,88 +54,86 @@
                     "notes": "High Velocity"
                 }
             },
-            "Fighting": {
-                "Neutral Melee": {
-                    "1": {
-                        "Name": "Beam Saber",
-                        "Input": "BBB",
-                        "Damage": "173",
-                        "Routes": "BC(1-2nd hit)",
-                        "Steppable": "yes",
-                        "Notes": ""
-                    },
-                    "2": {
-                        "Name": "Beam Saber",
-                        "Input": "BB(8)BB",
-                        "Damage": "215",
-                        "Routes": "BC(1-3rd hit)",
-                        "Steppable": "yes",
-                        "Notes": ""
-                    }
+            "fighting": {
+                "1": {
+                    "type": "Neutral Melee",
+                    "name": "Beam Saber",
+                    "input": "BBB",
+                    "damage": "173",
+                    "routes": "BC(1-2nd hit)",
+                    "steppable": "yes",
+                    "notes": ""
                 },
-                "Forward Melee": {
-                    "1": {
-                        "Name": "Beam Saber Puncture",
-                        "Input": "8B",
-                        "Damage": "84",
-                        "Routes": "BC",
-                        "Steppable": "yes",
-                        "Notes": ""
-                    }
+                "2": {
+                    "type": "Neutral Melee",
+                    "name": "Beam Saber",
+                    "input": "BB(8)BB",
+                    "damage": "215",
+                    "routes": "BC(1-3rd hit)",
+                    "steppable": "yes",
+                    "notes": ""
                 },
-                "Side Melee": {
-                    "1": {
-                        "Name": "Gundam Hammer",
-                        "Input": "6BB",
-                        "Damage": "154",
-                        "Routes": "BC(1-2nd hit)",
-                        "Steppable": "yes",
-                        "Notes": "Wide swing, beside and behind"
-                    }
+                "3": {
+                    "type": "Forward Melee",
+                    "name": "Beam Saber Puncture",
+                    "input": "8B",
+                    "damage": "84",
+                    "routes": "BC",
+                    "steppable": "yes",
+                    "notes": ""
                 },
-                "Back Melee": {
-                    "1": {
-                        "Name": "Battle Counter",
-                        "Input": "2B",
-                        "Damage": "80",
-                        "Routes": "-",
-                        "Steppable": "yes",
-                        "Notes": "Pushes forward after a delay blocking shots"
-                    },
-                    "2": {
-                        "Name": "Shield Throw and Leap",
-                        "Input": "2B-A-B",
-                        "Damage": "215",
-                        "Routes": "55(throw)-135(Leap)",
-                        "Steppable": "No",
-                        "Notes": "Shield throw will stun, Shield Throw not steppable"
-                    }
+                "4": {
+                    "type": "Side Melee",
+                    "name": "Gundam Hammer",
+                    "input": "6BB",
+                    "damage": "154",
+                    "routes": "BC(1-2nd hit)",
+                    "steppable": "yes",
+                    "notes": "Wide swing, beside and behind"
                 },
-                "Boost Dash Melee": {
-                    "1": {
-                        "Name": "Combination attack",
-                        "Input": "BD8BBB",
-                        "Damage": "190",
-                        "Routes": "-",
-                        "Notes": ""
-                    }
+                "5": {
+                    "type": "Back Melee",
+                    "name": "Battle Counter",
+                    "input": "2B",
+                    "damage": "80",
+                    "routes": "-",
+                    "steppable": "yes",
+                    "notes": "Pushes forward after a delay blocking shots"
                 },
-                "Special Fighting": {
-                    "1": {
-                        "Name": "Stomp",
-                        "Input": "BC during melee",
-                        "Damage": "147 to 210",
-                        "Routes": "-",
-                        "Notes": "Usable during most melee, Ground bounces"
-                    }
+                "6": {
+                    "type": "Back Melee",
+                    "name": "Shield Throw and Leap",
+                    "input": "2B-A-B",
+                    "damage": "215",
+                    "routes": "",
+                    "steppable": "No",
+                    "notes": "Shield throw will stun, Shield Throw not steppable"
+                },
+                "7": {
+                    "type": "Boost Dash Melee",
+                    "name": "Combination attack",
+                    "input": "BD8BBB",
+                    "damage": "190",
+                    "routes": "-",
+                    "steppable": "yes",
+                    "notes": ""
+                },
+                "8": {
+                    "type": "Special Fighting",
+                    "name": "Stomp",
+                    "input": "BC during melee",
+                    "damage": "147 to 210",
+                    "routes": "-",
+                    "steppable": "yes",
+                    "notes": "Usable during most melee, Ground bounces"
                 }
             },
-            "Special": {
-                "1": {
-                    "Name": "Last Shooting",
-                    "Input": "ABC",
-                    "Damage": "296/274",
-                    "Notes": "Two Stage Super, slash then Shot"
+            "special": {
+                "0": {
+                    "name": "Last Shooting",
+                    "input": "ABC",
+                    "damage": "296/274",
+                    "notes": "Two Stage Super, melee slash then upwards shot"
                 }
             }
         }

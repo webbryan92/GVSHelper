@@ -1,9 +1,13 @@
 tabs-page{
     .tabbar, .tabs-ios, .tabs-md , .tabs-wp{
+        .tabbar{
+          border: 5px #000000;
+          background: linear-gradient(to top,  #333333 0%,#949494 100%) !important;
+        }
         .tab-button-icon {
             background-repeat:no-repeat;
             background-position:center;
-            height:40px;
+            height:50px;
             width: 100px;
             background-size:contain;
             -webkit-background-size: contain;
@@ -13,12 +17,11 @@ tabs-page{
                 display:none;
             }
         }
-    }
-    
+    }    
     .tabs-ios {
       a[aria-selected=false]{
          .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
-          background-image: url(../assets/imgs/500small.png);
+          background-image: url(../assets/imgs/500.png);
         }
         .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
           background-image: url(../assets/imgs/400.png);
@@ -32,16 +35,16 @@ tabs-page{
       }
      a[aria-selected=true] {
         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
-          background-image: url(../assets/imgs/500small.png);
+          background-image: url(../assets/imgs/500GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
-          background-image: url(../assets/imgs/400.png);
+          background-image: url(../assets/imgs/400GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
-          background-image: url(../assets/imgs/300.png);
+          background-image: url(../assets/imgs/300GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
-          background-image: url(../assets/imgs/200.png);
+          background-image: url(../assets/imgs/200GS.png);
         }
       }
     }
@@ -49,7 +52,7 @@ tabs-page{
     .tabs-md {
       a[aria-selected=false]{
          .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label="icon500"] {
-          background-image: url(../assets/imgs/500small.png);
+          background-image: url(../assets/imgs/500.png);
         }
         .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
           background-image: url(../assets/imgs/400.png);
@@ -64,16 +67,16 @@ tabs-page{
     
      a[aria-selected=true] {
         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
-          background-image: url(../assets/imgs/500small.png);
+          background-image: url(../assets/imgs/500GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
-          background-image: url(../assets/imgs/400.png);
+          background-image: url(../assets/imgs/400GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
-          background-image: url(../assets/imgs/300.png);
+          background-image: url(../assets/imgs/300GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
-          background-image: url(../assets/imgs/200.png);
+          background-image: url(../assets/imgs/200GS.png);
         }
       }
     }
@@ -81,7 +84,7 @@ tabs-page{
     .tabs-wp {
       a[aria-selected=false]{
         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label="icon500"] {
-          background-image: url(../assets/imgs/500small.png);
+          background-image: url(../assets/imgs/500.png);
         }
         .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
           background-image: url(../assets/imgs/400.png);
@@ -96,16 +99,16 @@ tabs-page{
     
      a[aria-selected=true] {
         .tab-button-icon[ng-reflect-name=icon500], .tab-button-icon[aria-label=icon500] {
-          background-image: url(../assets/imgs/500.png);
+          background-image: url(../assets/imgs/500GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon400], .tab-button-icon[aria-label=icon400] {
-          background-image: url(../assets/imgs/400.png);
+          background-image: url(../assets/imgs/400GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon300], .tab-button-icon[aria-label=icon300] {
-          background-image: url(../assets/imgs/300.png);
+          background-image: url(../assets/imgs/300GS.png);
         }
         .tab-button-icon[ng-reflect-name=icon200], .tab-button-icon[aria-label=icon200] {
-          background-image: url(../assets/imgs/200.png);
+          background-image: url(../assets/imgs/200GS.png);
         }
       }
     }

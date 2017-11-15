@@ -14,3 +14,18 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background{
+    background: linear-gradient(to bottom,  #333333 0%,#949494 100%)
+}
+.toolbar-title{
+    color: rgb(228, 205, 29);
+    text-shadow: 2px 2px #444444;
+}
+.bar-button{
+    color: rgb(228, 205, 29);
+    text-shadow: 2px 2px #444444;
+}
+.backgroundTemplate {    
+    background: linear-gradient(to bottom right, #333333, #949494);     
+}
