@@ -23,12 +23,12 @@ export class SuitPage {
 
   constructor(
     public navCtrl: NavController, 
-    public params:NavParams, 
+    public params: NavParams, 
     private suitService: SuitService
   ) {
       this.suitRef = params.get('suit');        
       this.suit = this.suitRef.payload.val(); 
-      this.expanded = false;   
+      this.expanded = false;
   }
 
   ngOnInit(): void {
@@ -36,6 +36,9 @@ export class SuitPage {
     this.shooting = this.suitService.getRanged(this.suitRef.key);
     this.melees = this.suitService.getMelee(this.suitRef.key);
     this.specials = this.suitService.getSpecials(this.suitRef.key);
+  }
+  goBack() {
+    this.navCtrl.pop()
   }
   
   previousType(type): boolean{

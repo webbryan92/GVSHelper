@@ -1,9 +1,12 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar>
+    <button (click)= "goBack()">
+        Back
+    </button>
     <ion-title align-center>
       {{suit.name}}
     </ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="grad">
@@ -17,7 +20,7 @@
   <br>
   <table style="width:100%">
     <thead>
-      <tr>
+      <tr class = "shotHead">
         <td colspan="6">
           Shooting
         </td>
@@ -63,15 +66,30 @@
   </table>
   <br>
   <table style="width:100%">
-    <caption>Melee</caption>
+      <thead class = "meleeHead">
+          <tr>
+            <td colspan="6">
+              Melee
+            </td>
+          </tr>
+        </thead>
     <tr>
+      <th></th>
       <th></th>
       <th>Input</th>
       <th>Damage</th>
       <th>Cancels</th>
     </tr>
     <ng-container *ngFor="let melee of melees | async">
-      <tr>
+      <tr class="odd">
+          <td>
+              <button *ngIf="melee.expanded" (click)="melee.expanded = false" class = "custom-button">
+                <ion-icon name="arrow-dropup"></ion-icon>
+              </button>
+              <button *ngIf="!melee.expanded" (click)="melee.expanded = true" class = "custom-button">
+                <ion-icon name="arrow-dropdown"></ion-icon>
+              </button>
+            </td>
         <ng-container *ngIf="previousType(melee.type)">
           <th></th>
           <td>{{melee.input}}</td>
@@ -85,24 +103,53 @@
           <td>{{melee.routes}}</td>
         </ng-container>
       </tr>
+      <ng-container *ngIf="melee.expanded" >
+          <tr class = "dropdown">
+            <th colspan="2" align-left>Notes</th>
+            <td colspan="4">{{melee.notes}}</td>
+          </tr>
+          <tr class = "dropdown">
+            <th colspan="2" align-left >Steppable</th>
+            <td colspan="4">{{melee.steppable}}</td>
+          </tr>
+        </ng-container>
     </ng-container>
   </table>
   <br>
   <table>
-    <caption>Supers</caption>
+      <thead class = "SpecialHead">
+          <tr>
+            <td colspan="6" >
+              Supers
+            </td>
+          </tr>
+        </thead>
     <tr>
+      <th></th>
       <th></th>
       <th>Input</th>
       <th>Damage</th>
-      <th>Notes</th>
     </tr>
     <ng-container *ngFor="let special of specials | async">
-      <tr>
+      <tr class = "odd">
+          <td>
+              <button *ngIf="special.expanded" (click)="special.expanded = false" class = "custom-button">
+                <ion-icon name="arrow-dropup"></ion-icon>
+              </button>
+              <button *ngIf="!special.expanded" (click)="special.expanded = true" class = "custom-button">
+                <ion-icon name="arrow-dropdown"></ion-icon>
+              </button>
+            </td>
         <th>{{special.name}}</th>
         <td>{{special.input}}</td>
         <td>{{special.damage}}</td>
-        <td>{{special.notes}}</td>
       </tr>
+      <ng-container *ngIf="special.expanded" >
+          <tr class = "dropdown">
+            <th colspan="2" align-left>Notes</th>
+            <td colspan="4">{{special.notes}}</td>
+          </tr>
+        </ng-container>
     </ng-container>
   </table>
 
