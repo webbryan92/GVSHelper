@@ -9,7 +9,7 @@
             },
             "shooting": {
                 "1": {
-                    "type": "Main",
+                    "type": "A",
                     "name": "Beam Rifle",
                     "ammo": "7",
                     "damage": "70",
@@ -18,7 +18,7 @@
                     "notes": "Over-the-shoulder shot when facing away"
                 },
                 "2": {
-                    "type": "Sub Weapon",
+                    "type": "AB",
                     "name": "Hyper Bazooka",
                     "ammo": "3",
                     "damage": "99",
@@ -27,7 +27,7 @@
                     "notes": ""
                 },
                 "3": {
-                    "type": "Special Shooting",
+                    "type": "AC",
                     "name": "Beam Javelin",
                     "ammo": "-",
                     "damage": "90-140-190",
@@ -36,7 +36,7 @@
                     "notes": "Hold input to charge"
                 },
                 "4": {
-                    "type": "Special Melee",
+                    "type": "BC",
                     "name": "Gundam Hammer",
                     "ammo": "-",
                     "damage": "24 to 114",
@@ -45,7 +45,7 @@
                     "notes": "Multi hit"
                 },
                 "5": {
-                    "type": "Charge Shot A",
+                    "type": "CSA",
                     "name": "Beam Rifle(Sniper)",
                     "ammo": "-",
                     "damage": "120",

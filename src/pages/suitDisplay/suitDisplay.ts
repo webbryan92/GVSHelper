@@ -19,6 +19,7 @@ export class SuitPage {
     public previous: any;
     public previousVal: any;
     public specials: any;
+    public expanded: boolean;
 
   constructor(
     public navCtrl: NavController, 
@@ -26,14 +27,17 @@ export class SuitPage {
     private suitService: SuitService
   ) {
       this.suitRef = params.get('suit');        
-      this.suit = this.suitRef.payload.val();    
+      this.suit = this.suitRef.payload.val(); 
+      this.expanded = false;   
   }
+
   ngOnInit(): void {
     this.pilots = this.suitService.getPilots(this.suitRef.key);
     this.shooting = this.suitService.getRanged(this.suitRef.key);
     this.melees = this.suitService.getMelee(this.suitRef.key);
     this.specials = this.suitService.getSpecials(this.suitRef.key);
   }
+  
   previousType(type): boolean{
     if(type === this.previous){
       this.previousVal = true;

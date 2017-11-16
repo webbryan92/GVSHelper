@@ -16,23 +16,50 @@
   </ng-container>
   <br>
   <table style="width:100%">
-    <caption>Shooting</caption>
-    <tr>
-      <th></th>
-      <th>Name</th>
-      <th>Ammo</th>
-      <th>Damage</th>
-      <th>Cancels</th>
-    </tr>
-    <ng-container *ngFor="let shot of shooting | async">
+    <thead>
       <tr>
-        <th>{{shot.type}}</th>
-        <td>{{shot.name}}</td>
-        <td>{{shot.ammo}}</td>
-        <td>{{shot.damage}}</td>
-        <td>{{shot.cancels}}</td>
+        <td colspan="6">
+          Shooting
+        </td>
       </tr>
-    </ng-container>
+    </thead>
+    <tbody>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>Name</th>
+        <th>Ammo</th>
+        <th>Damage</th>
+        <th>Cancels</th>
+      </tr>
+      <ng-container *ngFor="let shot of shooting | async">
+        <tr class="odd">
+          <td>
+            <button *ngIf="shot.expanded" (click)="shot.expanded = false" class = "custom-button">
+              <ion-icon name="arrow-dropup"></ion-icon>
+            </button>
+            <button *ngIf="!shot.expanded" (click)="shot.expanded = true" class = "custom-button">
+              <ion-icon name="arrow-dropdown"></ion-icon>
+            </button>
+          </td>
+          <th>{{shot.type}}</th>
+          <td>{{shot.name}}</td>
+          <td>{{shot.ammo}}</td>
+          <td>{{shot.damage}}</td>
+          <td>{{shot.cancels}}</td>
+        </tr>
+        <ng-container *ngIf="shot.expanded" >
+          <tr class = "dropdown">
+            <th colspan="2" align-left>Notes</th>
+            <td colspan="4">{{shot.notes}}</td>
+          </tr>
+          <tr class = "dropdown">
+            <th colspan="2" align-left >Vernier</th>
+            <td colspan="4">{{shot.vernier}}</td>
+          </tr>
+        </ng-container>
+      </ng-container>
+    </tbody>
   </table>
   <br>
   <table style="width:100%">
@@ -45,40 +72,38 @@
     </tr>
     <ng-container *ngFor="let melee of melees | async">
       <tr>
-        <ng-container>
-          <ng-container *ngIf="previousType(melee.type)">
-            <th></th>
-            <td>{{melee.input}}</td>
-            <td>{{melee.damage}}</td>
-            <td>{{melee.routes}}</td>
-          </ng-container>
-          <ng-container *ngIf="!previousVal">
-            <th>{{melee.type}}</th>
-            <td>{{melee.input}}</td>
-            <td>{{melee.damage}}</td>
-            <td>{{melee.routes}}</td>
-          </ng-container>
+        <ng-container *ngIf="previousType(melee.type)">
+          <th></th>
+          <td>{{melee.input}}</td>
+          <td>{{melee.damage}}</td>
+          <td>{{melee.routes}}</td>
+        </ng-container>
+        <ng-container *ngIf="!previousVal">
+          <th>{{melee.type}}</th>
+          <td>{{melee.input}}</td>
+          <td>{{melee.damage}}</td>
+          <td>{{melee.routes}}</td>
         </ng-container>
       </tr>
     </ng-container>
   </table>
   <br>
   <table>
-      <caption>Supers</caption>
+    <caption>Supers</caption>
+    <tr>
+      <th></th>
+      <th>Input</th>
+      <th>Damage</th>
+      <th>Notes</th>
+    </tr>
+    <ng-container *ngFor="let special of specials | async">
       <tr>
-        <th></th>
-        <th>Input</th>
-        <th>Damage</th>
-        <th>Notes</th>
+        <th>{{special.name}}</th>
+        <td>{{special.input}}</td>
+        <td>{{special.damage}}</td>
+        <td>{{special.notes}}</td>
       </tr>
-      <ng-container *ngFor="let special of specials | async">
-          <tr>
-            <th>{{special.name}}</th>
-            <td>{{special.input}}</td>
-            <td>{{special.damage}}</td>
-            <td>{{special.notes}}</td>
-          </tr>
-        </ng-container>
+    </ng-container>
   </table>
 
 </ion-content>

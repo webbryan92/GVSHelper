@@ -16,10 +16,10 @@
 // automatically applied to the <body> element in the app.
 
 .toolbar-background{
-    background: linear-gradient(to bottom,  #333333 0%,#949494 100%)
+    background: linear-gradient(to bottom, color($colors, gradient, base) 0%,color($colors, gradient, contrast) 100%)
 }
 .toolbar-title{
-    color: rgb(228, 205, 29);
+    color: #e4cd20;
     text-shadow: 2px 2px #444444;
 }
 .bar-button{
@@ -27,5 +27,5 @@
     text-shadow: 2px 2px #444444;
 }
 .backgroundTemplate {    
-    background: linear-gradient(to bottom right, #333333, #949494);     
+    background: linear-gradient(to bottom right, color($colors, gradient, base), color($colors, gradient, contrast));     
 }
