@@ -17,7 +17,6 @@ export class SuitPage {
     public shooting: any;
     public melees: any;
     public previous: any;
-    public previousVal: any;
     public specials: any;
     public expanded: boolean;
 
@@ -40,11 +39,9 @@ export class SuitPage {
   
   previousType(type): boolean{
     if(type === this.previous){
-      this.previousVal = true;
       return true      
     }
     this.previous = type;
-    this.previousVal = false;
     return false
   }
 }

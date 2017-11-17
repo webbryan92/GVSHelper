@@ -34,18 +34,33 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:      #999999,
-  secondary:    #BBBBBB,
-  danger:       #f53d3d,
-  shadow:       #555555,
-  lightShadow:   #919191,
+  primary:          #999999,
+  secondary:        #BBBBBB,
+  headText:         #eccd00,
+  buttonColor:       #eccd00,
+  shadow:           #555555,
+  lightShadow:      #919191,
+  shootingTheme:    #1e3147,
+  meleeTheme:       #6b4600,
+  specialTheme:     #5f0000,
+  tableInnerBorder: #919191,
+  tableHeader:      #FFFFFF,
+
   gradient: (
-    base:       #333333,
-    contrast:   #949494
+    base:           #222222,
+    contrast:       #555555
+  ),
+  background-gradient: (
+    base:           #888888,
+    contrast:       #999999
   ),
   tables: (
-    base:       #888888,
-    contrast:   #e4cd20
+    base:           #888888,
+    contrast:       #BBBBBB
+  ),
+  buttons: (
+    base:           #444444,
+    contrast:       #666666
   )
 );
 

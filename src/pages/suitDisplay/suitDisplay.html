@@ -29,9 +29,9 @@
     </ion-row>
   </ion-grid>
   <br>
-  <table style="width:100%">
+  <table style="width:100%" class="shootingHeader">
     <thead>
-      <tr class="shotHead">
+      <tr>
         <td colspan="6">
           Shooting
         </td>
@@ -67,17 +67,13 @@
             <th colspan="2" align-left>Notes</th>
             <td colspan="4">{{shot.notes}}</td>
           </tr>
-          <tr class="dropdown">
-            <th colspan="2" align-left>Vernier</th>
-            <td colspan="4">{{shot.vernier}}</td>
-          </tr>
         </ng-container>
       </ng-container>
     </tbody>
   </table>
   <br>
-  <table style="width:100%">
-    <thead class="meleeHead">
+  <table style="width:100%" class="meleeHeader">
+    <thead>
       <tr>
         <td colspan="6">
           Melee
@@ -101,18 +97,18 @@
             <ion-icon name="arrow-dropdown" color = "secondary"></ion-icon>
           </button>
         </td>
-        <ng-container *ngIf="previousType(melee.type)">
+        <ng-container *ngIf="previousType(melee.type); else elseBlock">
           <th></th>
           <td>{{melee.input}}</td>
           <td>{{melee.damage}}</td>
           <td>{{melee.routes}}</td>
         </ng-container>
-        <ng-container *ngIf="!previousVal">
+        <ng-template #elseBlock>
           <th>{{melee.type}}</th>
           <td>{{melee.input}}</td>
           <td>{{melee.damage}}</td>
           <td>{{melee.routes}}</td>
-        </ng-container>
+        </ng-template>
       </tr>
       <ng-container *ngIf="melee.expanded">
         <tr class="dropdown">
@@ -127,10 +123,10 @@
     </ng-container>
   </table>
   <br>
-  <table>
-    <thead class="SpecialHead">
+  <table class="specialHeader">
+    <thead>
       <tr>
-        <td colspan="6">
+        <td rowspan="2" colspan="6">
           Supers
         </td>
       </tr>

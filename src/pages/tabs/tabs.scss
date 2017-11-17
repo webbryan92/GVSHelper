@@ -1,8 +1,7 @@
 tabs-page{
     .tabbar, .tabs-ios, .tabs-md , .tabs-wp{
         .tabbar{
-          border: 5px #000000;
-          background: linear-gradient(to top,  #333333 0%,#949494 100%) !important;
+          background: linear-gradient(to top, color($colors, gradient, base) 0%,color($colors, gradient, contrast) 100%) !important;
         }
         .tab-button-icon {
             background-repeat:no-repeat;

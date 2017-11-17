@@ -19,10 +19,10 @@
     background: linear-gradient(to bottom, color($colors, gradient, base) 0%,color($colors, gradient, contrast) 100%)
 }
 .toolbar-title{
-    color: #e4cd20;
-    text-shadow: 2px 2px #444444;
+    color: color($colors, headText);
+    text-shadow: 2px 2px color($colors, shadow);
 }
 .bar-button{
-    color: rgb(228, 205, 29);
-    text-shadow: 2px 2px #444444;
+    color: color($colors, headText);
+    text-shadow: 2px 2px color($colors, shadow);
 }

@@ -17,15 +17,12 @@ suitDisplay{
     }
     tbody tr:last-child td:last-child {
         border-radius: 0 0 10px 0;
-    }
-    thead {        
-        background: rgb(47, 116, 219)
-    }
+    }    
     thead tr td {
         border-radius: 10px 10px 0 0;
     }
     table {
-        background: color($colors, secondary);
+        background: color($colors, tables, contrast);
         border-collapse: collapse;
         border-radius: 10px;
         box-shadow: 2px 2px 10px color($colors, shadow);
@@ -42,14 +39,17 @@ suitDisplay{
         text-align: center;
     }
     .grad {
-        background-image: linear-gradient(to bottom right, #BBBBBB, #CCCCCC);        
+        background-image: linear-gradient(
+            to bottom right,  
+            color($colors, background-gradient, base) 0%, 
+            color($colors, background-gradient, contrast) 100%);        
     }
     .odd {        
         border-top: 2px solid color($colors, shadow);
         background: color($colors, primary);              
     }
     .dropdown {
-       border-top: 2px solid color($colors, lightShadow);        
+       border-top: 2px solid color($colors, tableInnerBorder);        
     }
     .custom-button {
         border-radius: 5px;
@@ -62,5 +62,26 @@ suitDisplay{
     }
     .specialcell {
         min-width: 100px;
+    }
+    .shootingHeader {
+        thead tr td{
+            color: color($colors, tableHeader);
+            text-shadow: 2px 2px 5px color($colors, shadow);
+            background: color($colors, shootingTheme);            
+        }
+    }
+    .meleeHeader {
+        thead tr td{
+            color: color($colors, tableHeader);
+            text-shadow: 2px 2px 5px color($colors, shadow);
+            background: color($colors, meleeTheme);
+        }
+    }
+    .specialHeader {
+        thead tr td{
+            color: color($colors, tableHeader);
+            text-shadow: 2px 2px 5px color($colors, shadow);
+            background: color($colors, specialTheme);
+        }
     }
 }
