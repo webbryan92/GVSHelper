@@ -52,7 +52,15 @@ suitDisplay{
        border-top: 2px solid color($colors, lightShadow);        
     }
     .custom-button {
-        margin: 3px;
         border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        padding: 1px;
+    }
+    img{
+        border-radius: 5px;
+    }
+    .specialcell {
+        min-width: 100px;
     }
 }

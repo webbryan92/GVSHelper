@@ -11,4 +11,8 @@ tierDisplay {
       margin: 0;
       font-family: Campton, sans-serif;
     }
+    img{
+      border-radius: 5px;      
+      box-shadow: 1px 1px 15px color($colors, shadow);
+    }
 }

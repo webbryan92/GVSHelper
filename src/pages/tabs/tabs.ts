@@ -14,8 +14,6 @@ export class TabsPage {
   tab3Root = TierPage;
   tab4Root = TierPage;
   termsRoot = AboutPage;
-  loaded:   boolean = false;
-  tabIndex: number  = 0;
-  constructor(public navCtrl: NavController) {    
+  constructor() {    
   }
 }

@@ -26,7 +26,7 @@ export class SuitPage {
     public params: NavParams, 
     private suitService: SuitService
   ) {
-      this.suitRef = params.get('suit');        
+      this.suitRef = params.get('suit');      
       this.suit = this.suitRef.payload.val(); 
       this.expanded = false;
   }
@@ -36,9 +36,6 @@ export class SuitPage {
     this.shooting = this.suitService.getRanged(this.suitRef.key);
     this.melees = this.suitService.getMelee(this.suitRef.key);
     this.specials = this.suitService.getSpecials(this.suitRef.key);
-  }
-  goBack() {
-    this.navCtrl.pop()
   }
   
   previousType(type): boolean{

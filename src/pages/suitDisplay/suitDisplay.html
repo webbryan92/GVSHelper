@@ -1,8 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <button (click)= "goBack()">
-        Back
-    </button>
+    <ion-buttons left>
+      <button ion-button icon-only navPop>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title align-center>
       {{suit.name}}
     </ion-title>
@@ -10,17 +12,26 @@
 </ion-header>
 
 <ion-content padding class="grad">
-  <h4>Suit: </h4> {{suit.name}}
-  <h4>Cost: </h4> {{suit.cost}}
-  <h4>Pilots:</h4>
-  <ng-container *ngFor="let pilot of pilots | async">
-    {{pilot}}
-    <br>
-  </ng-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img width="128" height="128" src="{{suit.imgsrc}}">
+      </ion-col>
+      <ion-col>
+        <h4>Pilots:</h4>
+        <ng-container *ngFor="let pilot of pilots | async">
+          {{pilot}}
+          <br>
+        </ng-container>
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
   <br>
   <table style="width:100%">
     <thead>
-      <tr class = "shotHead">
+      <tr class="shotHead">
         <td colspan="6">
           Shooting
         </td>
@@ -38,11 +49,11 @@
       <ng-container *ngFor="let shot of shooting | async">
         <tr class="odd">
           <td>
-            <button *ngIf="shot.expanded" (click)="shot.expanded = false" class = "custom-button">
-              <ion-icon name="arrow-dropup"></ion-icon>
+            <button ion-button icon-only *ngIf="shot.expanded" (click)="shot.expanded = false" class="custom-button">
+              <ion-icon name="arrow-dropup" color = "secondary"></ion-icon>
             </button>
-            <button *ngIf="!shot.expanded" (click)="shot.expanded = true" class = "custom-button">
-              <ion-icon name="arrow-dropdown"></ion-icon>
+            <button ion-button icon-only *ngIf="!shot.expanded" (click)="shot.expanded = true" class="custom-button">
+              <ion-icon name="arrow-dropdown" color = "secondary"></ion-icon>
             </button>
           </td>
           <th>{{shot.type}}</th>
@@ -51,13 +62,13 @@
           <td>{{shot.damage}}</td>
           <td>{{shot.cancels}}</td>
         </tr>
-        <ng-container *ngIf="shot.expanded" >
-          <tr class = "dropdown">
+        <ng-container *ngIf="shot.expanded">
+          <tr class="dropdown">
             <th colspan="2" align-left>Notes</th>
             <td colspan="4">{{shot.notes}}</td>
           </tr>
-          <tr class = "dropdown">
-            <th colspan="2" align-left >Vernier</th>
+          <tr class="dropdown">
+            <th colspan="2" align-left>Vernier</th>
             <td colspan="4">{{shot.vernier}}</td>
           </tr>
         </ng-container>
@@ -66,13 +77,13 @@
   </table>
   <br>
   <table style="width:100%">
-      <thead class = "meleeHead">
-          <tr>
-            <td colspan="6">
-              Melee
-            </td>
-          </tr>
-        </thead>
+    <thead class="meleeHead">
+      <tr>
+        <td colspan="6">
+          Melee
+        </td>
+      </tr>
+    </thead>
     <tr>
       <th></th>
       <th></th>
@@ -82,14 +93,14 @@
     </tr>
     <ng-container *ngFor="let melee of melees | async">
       <tr class="odd">
-          <td>
-              <button *ngIf="melee.expanded" (click)="melee.expanded = false" class = "custom-button">
-                <ion-icon name="arrow-dropup"></ion-icon>
-              </button>
-              <button *ngIf="!melee.expanded" (click)="melee.expanded = true" class = "custom-button">
-                <ion-icon name="arrow-dropdown"></ion-icon>
-              </button>
-            </td>
+        <td>
+          <button ion-button icon-only *ngIf="melee.expanded" (click)="melee.expanded = false" class="custom-button">
+            <ion-icon name="arrow-dropup" color = "secondary"></ion-icon>
+          </button>
+          <button ion-button icon-only *ngIf="!melee.expanded" (click)="melee.expanded = true" class="custom-button">
+            <ion-icon name="arrow-dropdown" color = "secondary"></ion-icon>
+          </button>
+        </td>
         <ng-container *ngIf="previousType(melee.type)">
           <th></th>
           <td>{{melee.input}}</td>
@@ -103,27 +114,27 @@
           <td>{{melee.routes}}</td>
         </ng-container>
       </tr>
-      <ng-container *ngIf="melee.expanded" >
-          <tr class = "dropdown">
-            <th colspan="2" align-left>Notes</th>
-            <td colspan="4">{{melee.notes}}</td>
-          </tr>
-          <tr class = "dropdown">
-            <th colspan="2" align-left >Steppable</th>
-            <td colspan="4">{{melee.steppable}}</td>
-          </tr>
-        </ng-container>
+      <ng-container *ngIf="melee.expanded">
+        <tr class="dropdown">
+          <th colspan="2" align-left>Notes</th>
+          <td colspan="4">{{melee.notes}}</td>
+        </tr>
+        <tr class="dropdown">
+          <th colspan="2" align-left>Steppable</th>
+          <td colspan="4">{{melee.steppable}}</td>
+        </tr>
+      </ng-container>
     </ng-container>
   </table>
   <br>
   <table>
-      <thead class = "SpecialHead">
-          <tr>
-            <td colspan="6" >
-              Supers
-            </td>
-          </tr>
-        </thead>
+    <thead class="SpecialHead">
+      <tr>
+        <td colspan="6">
+          Supers
+        </td>
+      </tr>
+    </thead>
     <tr>
       <th></th>
       <th></th>
@@ -131,25 +142,25 @@
       <th>Damage</th>
     </tr>
     <ng-container *ngFor="let special of specials | async">
-      <tr class = "odd">
-          <td>
-              <button *ngIf="special.expanded" (click)="special.expanded = false" class = "custom-button">
-                <ion-icon name="arrow-dropup"></ion-icon>
-              </button>
-              <button *ngIf="!special.expanded" (click)="special.expanded = true" class = "custom-button">
-                <ion-icon name="arrow-dropdown"></ion-icon>
-              </button>
-            </td>
+      <tr class="odd">
+        <td>
+          <button ion-button icon-only *ngIf="special.expanded" (click)="special.expanded = false" class="custom-button">
+            <ion-icon name="arrow-dropup" color = "secondary"></ion-icon>
+          </button>
+          <button ion-button icon-only *ngIf="!special.expanded" (click)="special.expanded = true" class="custom-button">
+            <ion-icon name="arrow-dropdown" color = "secondary"></ion-icon>
+          </button>
+        </td>
         <th>{{special.name}}</th>
-        <td>{{special.input}}</td>
-        <td>{{special.damage}}</td>
+        <td class = "specialcell">{{special.input}}</td>
+        <td class = "specialcell">{{special.damage}}</td>
       </tr>
-      <ng-container *ngIf="special.expanded" >
-          <tr class = "dropdown">
-            <th colspan="2" align-left>Notes</th>
-            <td colspan="4">{{special.notes}}</td>
-          </tr>
-        </ng-container>
+      <ng-container *ngIf="special.expanded">
+        <tr class="dropdown">
+          <th colspan="2" align-left>Notes</th>
+          <td colspan="4">{{special.notes}}</td>
+        </tr>
+      </ng-container>
     </ng-container>
   </table>
 

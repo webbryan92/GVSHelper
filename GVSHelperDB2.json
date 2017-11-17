@@ -3,6 +3,7 @@
         "0": {
             "cost": 400,
             "name": "RX-78 Gundam",
+            "imgsrc": "assets/imgs/Gundam-Thumbnail0.png",
             "pilots": {
                 "0": "Amuro Ray",
                 "1": "Ryu Jose"
