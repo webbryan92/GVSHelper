@@ -17,7 +17,7 @@
       <ion-col>
         <img width="128" height="128" src="{{suit.imgsrc}}">
       </ion-col>
-      <ion-col>
+      <ion-col class="pilots">
         <h4>Pilots:</h4>
         <ng-container *ngFor="let pilot of pilots | async">
           {{pilot}}
@@ -114,10 +114,6 @@
         <tr class="dropdown">
           <th colspan="2" align-left>Notes</th>
           <td colspan="4">{{melee.notes}}</td>
-        </tr>
-        <tr class="dropdown">
-          <th colspan="2" align-left>Steppable</th>
-          <td colspan="4">{{melee.steppable}}</td>
         </tr>
       </ng-container>
     </ng-container>

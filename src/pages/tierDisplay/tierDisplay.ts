@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NavParams } from 'ionic-angular';
-import { TierService } from '../../services/tier.service';
 import { Observable } from 'rxjs';
+
+import { TierService } from '../../services/tier.service';
+
 import { SuitPage } from '../suitDisplay/suitDisplay';
+import { HPPage } from '../health/health';
 
 
 @Component({
@@ -35,5 +38,8 @@ export class TierPage implements OnInit {
     this.navCtrl.push(SuitPage, {
       suit:suit
     });
+  }
+  viewHP(){
+    this.navCtrl.push(HPPage, {id:this.id});
   }
 }

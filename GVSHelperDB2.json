@@ -16,6 +16,9 @@
                     "damage": "70",
                     "cancels": "AB,AC,BC",
                     "vernier": "No",
+                    "steppable": "Yes",
+                    "stun": "No",
+                    "untechable": "No",
                     "notes": "Over-the-shoulder shot when facing away"
                 },
                 "2": {
@@ -25,7 +28,10 @@
                     "damage": "99",
                     "cancels": "AC",
                     "vernier": "Yes",
-                    "notes": ""
+                    "steppable": "No",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
                 },
                 "3": {
                     "type": "AC",
@@ -34,6 +40,9 @@
                     "damage": "90-140-190",
                     "cancels": "-",
                     "vernier": "Yes",
+                    "steppable": "No",
+                    "stun": "Yes",
+                    "untechable": "No",
                     "notes": "Hold input to charge"
                 },
                 "4": {
@@ -43,6 +52,9 @@
                     "damage": "24 to 114",
                     "cancels": "-",
                     "vernier": "Yes",
+                    "steppable": "No",
+                    "stun": "No",
+                    "untechable": "No",
                     "notes": "Multi hit"
                 },
                 "5": {
@@ -52,6 +64,9 @@
                     "damage": "120",
                     "cancels": "-",
                     "vernier": "Yes",
+                    "steppable": "Yes",
+                    "stun": "No",
+                    "untechable": "No",
                     "notes": "High Velocity"
                 }
             },
@@ -62,8 +77,10 @@
                     "input": "BBB",
                     "damage": "173",
                     "routes": "BC(1-2nd hit)",
-                    "steppable": "yes",
-                    "notes": ""
+                    "steppable": "Yes",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
                 },
                 "2": {
                     "type": "Neutral Melee",
@@ -72,7 +89,9 @@
                     "damage": "215",
                     "routes": "BC(1-3rd hit)",
                     "steppable": "yes",
-                    "notes": ""
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
                 },
                 "3": {
                     "type": "Forward Melee",
@@ -81,7 +100,9 @@
                     "damage": "84",
                     "routes": "BC",
                     "steppable": "yes",
-                    "notes": ""
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
                 },
                 "4": {
                     "type": "Side Melee",
@@ -90,6 +111,8 @@
                     "damage": "154",
                     "routes": "BC(1-2nd hit)",
                     "steppable": "yes",
+                    "stun": "No",
+                    "untechable": "No",
                     "notes": "Wide swing, beside and behind"
                 },
                 "5": {
@@ -99,6 +122,8 @@
                     "damage": "80",
                     "routes": "-",
                     "steppable": "yes",
+                    "stun": "Yes",
+                    "untechable": "No",
                     "notes": "Pushes forward after a delay blocking shots"
                 },
                 "6": {
@@ -106,9 +131,11 @@
                     "name": "Shield Throw and Leap",
                     "input": "2B-A-B",
                     "damage": "215",
-                    "routes": "",
+                    "routes": "-",
                     "steppable": "No",
-                    "notes": "Shield throw will stun, Shield Throw not steppable"
+                    "stun": "Yes",
+                    "untechable": "No",
+                    "notes": "Shield Throw not steppable"
                 },
                 "7": {
                     "type": "Boost Dash Melee",
@@ -117,7 +144,9 @@
                     "damage": "190",
                     "routes": "-",
                     "steppable": "yes",
-                    "notes": ""
+                    "stun": "Yes",
+                    "untechable": "No",
+                    "notes": "-"
                 },
                 "8": {
                     "type": "Special Fighting",
@@ -126,6 +155,8 @@
                     "damage": "147 to 210",
                     "routes": "-",
                     "steppable": "yes",
+                    "stun": "No",
+                    "untechable": "Yes",
                     "notes": "Usable during most melee, Ground bounces"
                 }
             },

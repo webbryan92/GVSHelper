@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TierPage } from '../pages/tierDisplay/tierDisplay';
 import { SuitPage } from '../pages/suitDisplay/suitDisplay';
+import { HPPage } from '../pages/health/health';
 
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../environment';
@@ -22,7 +23,8 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     AboutPage,
     TierPage,
     SuitPage,
-    TabsPage
+    TabsPage,
+    HPPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     AboutPage,
     TierPage,
     SuitPage,
-    TabsPage
+    TabsPage,
+    HPPage
   ],
   providers: [
     StatusBar,
