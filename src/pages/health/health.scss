@@ -14,9 +14,38 @@ ion-title {
         color($colors, background-gradient, base) 0%, 
         color($colors, background-gradient, contrast) 100%);        
 }
-.divider {
-    font-size: 50px;
+.custom-button {
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
 }
-.arrow{
-    font-size: 25px;
+th, td {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 2px 3px 2px 3px;
+}
+tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+tbody tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}    
+thead tr td {
+    border-radius: 10px 10px 0 0;
+}
+table {
+    background: color($colors, tables, contrast);
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px color($colors, shadow);
+    text-align: center;
+    padding: 2px 3px 2px 3px;
+}
+.odd {        
+    border-top: 2px solid color($colors, shadow);
+    background: color($colors, primary);              
+}
+.dropdown {
+   border-top: 2px solid color($colors, tableInnerBorder);        
 }

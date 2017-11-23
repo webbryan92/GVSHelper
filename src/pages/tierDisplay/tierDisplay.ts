@@ -40,6 +40,6 @@ export class TierPage implements OnInit {
     });
   }
   viewHP(){
-    this.navCtrl.push(HPPage, {id:this.id});
+    this.navCtrl.push(HPPage, {cost:this.id});
   }
 }

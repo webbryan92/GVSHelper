@@ -1,154 +1,45 @@
 <ion-header>
     <ion-toolbar>
-    <ion-buttons left>
-        <button ion-button icon-only navPop>
-        <ion-icon name="close"></ion-icon>
-        </button>
-    </ion-buttons>
-    <ion-title align-center>
-        {{id}} Teams & Health Regulation
-    </ion-title>
+        <ion-buttons left>
+            <button ion-button icon-only navPop>
+                <ion-icon name="close"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title align-center>
+            {{id}} Teams & Health Regulation
+        </ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content padding class="grad">
-    <ng-container [ngSwitch]="id">
-        <ng-container *ngSwitchCase="500">
-            <h1>Preferred Teamcomps</h1>
-            <img width="64" height="32" src= "assets/imgs/500.png">
-            <span class="divider">/</span>
-            <img width="64" height="32" src= "assets/imgs/400.png">
-            <h2>Death Order</h2>
-            <img width="32" height="16" src= "assets/imgs/500.png">
-            <span class="arrow">></span>
-            <img width="32" height="16" src= "assets/imgs/400.png"><br>
-            <img width="64" height="32" src= "assets/imgs/500.png">
-            <span class="divider">/</span>
-            <img width="64" height="32" src= "assets/imgs/300.png">
-            <h2>Death Order</h2>
-            <img width="32" height="16" src= "assets/imgs/500.png">
-            <span class="arrow">></span>
-            <img width="32" height="16" src= "assets/imgs/300.png">
-            <h1>Suboptimal Teamcomps</h1>
-            <img width="64" height="32" src= "assets/imgs/500.png">
-            <span class="divider">/</span>
-            <img width="64" height="32" src= "assets/imgs/500.png">
-            <h2>Death Order</h2>
-            <h3>Agressive suit takes the lead, ranged focused suit plays back</h3><br>
-            <img width="64" height="32" src= "assets/imgs/500.png">
-            <span class="divider">/</span>
-            <img width="64" height="32" src= "assets/imgs/200.png">
-            <h2>Death Order</h2>
-            <img width="32" height="16" src= "assets/imgs/500.png">
-            <span class="arrow">></span>
-            <img width="32" height="16" src= "assets/imgs/200.png">
-            <span class="arrow">></span>
-            <img width="32" height="16" src= "assets/imgs/200.png">
-        </ng-container>
-        <ng-container *ngSwitchCase="400">
-                <h1>Preferred Teamcomps</h1>
-                <img width="64" height="32" src= "assets/imgs/500.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/400.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/500.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/400.png"><br>
-                <img width="64" height="32" src= "assets/imgs/400.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/200.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/400.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <h1>Suboptimal Teamcomps</h1>
-                <img width="64" height="32" src= "assets/imgs/400.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/400.png">
-                <h2>Death Order</h2>
-                <h3>Agressive suit takes the lead, ranged focused suit plays back</h3><br>
-                <img width="64" height="32" src= "assets/imgs/400.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/300.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/400.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/300.png">                
-        </ng-container>
-        <ng-container *ngSwitchCase="300">
-                <h1>Preferred Teamcomps</h1>
-                <img width="64" height="32" src= "assets/imgs/500.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/300.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/500.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/300.png"><br>
-                <h1>Suit Dependant</h1>
-                <img width="64" height="32" src= "assets/imgs/300.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/300.png">
-                <h2>Death Order</h2>
-                <h3>Aim for dying close to the same time and make sure you or your partner can survive to use their 2nd death</h3>
-                <img width="64" height="32" src= "assets/imgs/300.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/200.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/300.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <h1>Suboptimal Teamcomps</h1>
-                <img width="64" height="32" src= "assets/imgs/400.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/300.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/400.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/300.png">  
-        </ng-container>
-        <ng-container *ngSwitchCase="200">
-                <h1>Preferred Teamcomps</h1>
-                <img width="64" height="32" src= "assets/imgs/400.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/200.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/400.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png"><br>
-                <h1>Suit Dependant</h1>
-                <img width="64" height="32" src= "assets/imgs/300.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/200.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/300.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <h1>Suboptimal Teamcomps</h1>
-                <img width="64" height="32" src= "assets/imgs/500.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/200.png">
-                <h2>Death Order</h2>
-                <img width="32" height="16" src= "assets/imgs/500.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png">
-                <span class="arrow">></span>
-                <img width="32" height="16" src= "assets/imgs/200.png"><br>
-                <img width="64" height="32" src= "assets/imgs/200.png">
-                <span class="divider">/</span>
-                <img width="64" height="32" src= "assets/imgs/200.png">
-                <h2>Death Order</h2>
-                <h3>Force 2v1's situations and pray</h3>
-        </ng-container>
-    </ng-container> 
+    <table width = 100%>
+        <tbody>
+            <tr >
+                <th></th>
+                <th>Partner</th>
+                <th>Rating</th>
+                <th colspan="3">Death Order</th>
+            </tr>
+            <ng-container *ngFor="let comp of comps | async">
+                <tr class="odd">
+                    <td>
+                        <button ion-button icon-only *ngIf="comp.expanded" (click)="comp.expanded = false" class="custom-button">
+                            <ion-icon name="arrow-dropup" color="secondary"></ion-icon>
+                        </button>
+                        <button ion-button icon-only *ngIf="!comp.expanded" (click)="comp.expanded = true" class="custom-button">
+                            <ion-icon name="arrow-dropdown" color="secondary"></ion-icon>
+                        </button>
+                    </td>
+                    <td>{{comp.payload.val().partner}}</td>
+                    <td>{{comp.payload.val().rating}}</td>
+                    <td>{{comp.payload.val().deathOrder}}</td>
+                </tr>
+                <ng-container *ngIf="comp.expanded">
+                    <tr class="dropdown">
+                        <th colspan="2" align-left>Notes</th>
+                        <td colspan="4">{{comp.payload.val().notes}}</td>
+                    </tr>
+                </ng-container>
+            </ng-container>
+        </tbody>
+    </table>
 </ion-content>

@@ -65,7 +65,13 @@
         <ng-container *ngIf="shot.expanded">
           <tr class="dropdown">
             <th colspan="2" align-left>Notes</th>
-            <td colspan="4">{{shot.notes}}</td>
+            <td>
+              <img *ngIf="(shot.steppable) === 'Yes'" src="assets/imgs/Step.png">
+              <img *ngIf="(shot.stun) === 'Yes'" src="assets/imgs/Stun.png">
+              <img *ngIf="(shot.untechable) === 'Yes'" src="assets/imgs/Untech.png">
+              <img *ngIf="(shot.vernier) === 'Yes'" src="assets/imgs/Vernier.png">
+            </td>
+            <td colspan="3">{{shot.notes}}</td>
           </tr>
         </ng-container>
       </ng-container>
@@ -113,7 +119,12 @@
       <ng-container *ngIf="melee.expanded">
         <tr class="dropdown">
           <th colspan="2" align-left>Notes</th>
-          <td colspan="4">{{melee.notes}}</td>
+          <td>
+              <img *ngIf="(melee.steppable) === 'Yes'" src="assets/imgs/Step.png">
+              <img *ngIf="(melee.stun) === 'Yes'" src="assets/imgs/Stun.png">
+              <img *ngIf="(melee.untechable) === 'Yes'" src="assets/imgs/Untech.png">
+          </td>
+          <td colspan="3">{{melee.notes}}</td>
         </tr>
       </ng-container>
     </ng-container>

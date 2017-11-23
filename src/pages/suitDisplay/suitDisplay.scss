@@ -6,12 +6,6 @@ suitDisplay{
         text-align: center;
         padding: 2px 3px 2px 3px;
     }
-    /*tbody tr:nth-child(even) {
-        background: color($colors, primary)
-    }
-    tbody tr:nth-child(odd){
-        background: color($colors, secondary)
-    }*/
     tbody tr:last-child td:first-child {
         border-radius: 0 0 0 10px;
     }
