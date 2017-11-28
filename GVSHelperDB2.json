@@ -1,4 +1,130 @@
 {
+    "Terminology":{
+        "0": {
+            "category": "Shorthand",
+            "name": "Numpad Notation",
+            "description": "When using a number plus a button it corresponds to using that direction as indicated by a keyboard numpad. 4 is left, 6 is right, 8 is up, etc"
+        },
+        "2": {
+            "category": "Shorthand",
+            "name": "A",
+            "description": "Ranged Attack"
+        },
+        "3": {
+            "category": "Shorthand",
+            "name": "B",
+            "description": "Melee Attack"
+        },
+        "4": {
+            "category": "Shorthand",
+            "name": "(number)B",
+            "description": "Direction pressed along with the melee button to recieve the desired melee, using numpad notation"
+        },
+        "5": {
+            "category": "Shorthand",
+            "name": "C",
+            "description": "Boost(jump in english controller settings)"
+        },
+        "6": {
+            "category": "Shorthand",
+            "name": "AB",
+            "description": "Sub Shot"
+        },
+        "7": {
+            "category": "Shorthand",
+            "name": "BC",
+            "description": "Special Melee Attack"
+        },
+        "8": {
+            "category": "Shorthand",
+            "name": "AC",
+            "description": "Fire Special Weapon"
+        },
+        "9": {
+            "category": "Shorthand",
+            "name": "ABC",
+            "description": "Burst/Super Attack"
+        },
+        "10": {
+            "category": "Shorthand",
+            "name": "CSA",
+            "description": "Charge shot A, the charge bar is usually featured under your Ranged attack button ammo indicator."
+        },
+        "11": {
+            "category": "Shorthand",
+            "name": "CSB",
+            "description": "Charge shot B, the charge bar is usually featured under your Melee attack button ammo indicator."
+        },
+        "12": {
+            "category": "Shorthand",
+            "name": "CC8B or BD8B",
+            "description": "Boost dash melee"
+        },
+        "13": {
+            "category": "Movement",
+            "name": "Boost Dash",
+            "description": "Action performed by double tapping the boost button. Covers distance quickly, can be held."
+        },
+        "14": {
+            "category": "Movement",
+            "name": "Boost Step",
+            "description": "Action performed by double tapping a cardinal direction. Removes guidance from shots fired after startup."
+        },
+        "15": {
+            "category": "Movement",
+            "name": "Ground Run",
+            "description": "Same execution as boost dash, however some suits when standing on the ground will enter a ground run state after boosting instead of lifting off the ground.  These suits will also jump instead of a normal ascending animation when you press and hold boost"
+        },
+        "16": {
+            "category": "Movement",
+            "name": "Boost Dive",
+            "description": "Action performed from the boost dive button.  Causes you to boost towards the ground with any momentum you're currently carrying."
+        },
+        "17": {
+            "category": "Movement",
+            "name": "Vernier",
+            "description": "Any action that stops most of your momentum and turns you to face your opponent."
+        },
+        "18": {
+            "category": "Movement",
+            "name": "Super Vernier",
+            "description": "Not to be confused with Vernier, this is a Tallgeese 1 exclusive movement option executed by pressing a direction and a single boost button press."
+        },
+        "19": {
+            "category": "Movement",
+            "name": "Braking",
+            "description": "On many ground run suits certain tools will force them to stop and begin boost recovery while performing the move."
+        },
+        "20": {
+            "category": "Movement",
+            "name": "Boost Hop",
+            "description": "Boosting then pressing and holding the boost button briefly to cover the distance of several boost dashes while not using extra boost.  The momentum from the boost is carried into the hop."
+        },
+        "21": {
+            "category": "Movement",
+            "name": "Orange Step",
+            "description": "A step performed out of a melee attack, the speed is faster than a normal step and as a result your momentum is higher during a fuwa."
+        },
+        "22": {
+            "category": "Movement",
+            "name": "Step Dive",
+            "description": "Combination of Step and boost dive where you use step to cut your opponents guidance and immediately dive with the momentum given to you by the step.  Largely considered the strongest landing tool in the game."
+        },
+        "23": {
+            "category": "Movement",
+            "name": "Fuwa Step",
+            "description": "Begin a sidestep and hold boost immediately after the step input.  The step will give you slight momentum as you ascend and fall.  Tapping boost can be used to end the sidestep animation early and smooth out your movement."
+        },
+        "24": {
+            "category": "Movement",
+            "name": "Ground Step Cancel",
+            "description": "Advanced movement technique for a few suits.  The action is performed by using a hop melee on a suit that carries them all the way to the ground and stepping when you touch the ground and fire an attack(usually main).  This initiates a boost recovery earlier than normal.  Referred to by many other names."
+        },
+        "Properties": {
+        },
+        "System": {            
+        }
+    },
     "CostComps": {
         "500": {
             "comps": {
