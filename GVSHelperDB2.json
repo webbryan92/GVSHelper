@@ -117,12 +117,28 @@
         },
         "24": {
             "category": "Movement",
-            "name": "Ground Step Cancel",
+            "name": "Ground Cancel",
             "description": "Advanced movement technique for a few suits.  The action is performed by using a hop melee on a suit that carries them all the way to the ground and stepping when you touch the ground and fire an attack(usually main).  This initiates a boost recovery earlier than normal.  Referred to by many other names."
         },
-        "Properties": {
+        "25": {
+            "category": "Properties",
+            "name": "coming soon",
+            "description": "coming soon"
         },
-        "System": {            
+        "26": {
+            "category": "Properties",
+            "name": "coming soon",
+            "description": "coming soon"
+        },
+        "27": {
+            "category": "System",
+            "name": "coming soon",
+            "description": "coming soon"
+        },
+        "28": {
+            "category": "System",
+            "name": "coming soon",
+            "description": "coming soon"
         }
     },
     "CostComps": {

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
+import { TermsPage } from '../pages/terms/terms';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TierPage } from '../pages/tierDisplay/tierDisplay';
 import { SuitPage } from '../pages/suitDisplay/suitDisplay';
@@ -20,7 +20,7 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
+    TermsPage,
     TierPage,
     SuitPage,
     TabsPage,
@@ -35,7 +35,7 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    TermsPage,
     TierPage,
     SuitPage,
     TabsPage,

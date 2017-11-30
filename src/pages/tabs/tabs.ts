@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { AboutPage } from '../about/about';
+import { TermsPage } from '../terms/terms';
 import { TierPage } from '../tierDisplay/tierDisplay';
 
 @Component({
@@ -13,7 +13,7 @@ export class TabsPage {
   tab2Root = TierPage;
   tab3Root = TierPage;
   tab4Root = TierPage;
-  termsRoot = AboutPage;
+  termsRoot = TermsPage;
   constructor() {    
   }
 }
