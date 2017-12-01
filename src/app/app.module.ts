@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { TermsPage } from '../pages/terms/terms';
+import { TermsDisplayPage } from '../pages/termsDisplay/termsDisplay';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TierPage } from '../pages/tierDisplay/tierDisplay';
 import { SuitPage } from '../pages/suitDisplay/suitDisplay';
@@ -24,6 +25,7 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     TierPage,
     SuitPage,
     TabsPage,
+    TermsDisplayPage,
     HPPage
   ],
   imports: [
@@ -39,6 +41,7 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     TierPage,
     SuitPage,
     TabsPage,
+    TermsDisplayPage,
     HPPage
   ],
   providers: [

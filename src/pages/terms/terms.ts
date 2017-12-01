@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TermsService } from '../../services/terms.service';
+import { TermsDisplayPage } from '../termsDisplay/termsDisplay';
 
 @Component({
   selector: 'page-terms',
@@ -14,5 +15,10 @@ export class TermsPage {
   }
   ngOnInit(): void {      
     this.terms = this.termsService.getTerms();
+  }
+  viewGroup(category){
+    this.navCtrl.push(TermsDisplayPage, {
+      category:category
+    });
   }
 }

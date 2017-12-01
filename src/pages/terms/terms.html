@@ -15,18 +15,27 @@
   <ion-grid>
     <ion-row>
       <ion-col text-center>
-        <button ion-button full color="primary">Shorthand</button>
+        <button ion-button full 
+        color="primary"
+        (click)="viewGroup('Shorthand')">
+        Shorthand</button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button full color="primary">Movement</button>
+        <button ion-button full 
+        color="primary"
+        (click)="viewGroup('Movement')">Movement</button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col text-center>
-        <button ion-button full color="primary">Properties</button>
+        <button ion-button full 
+        color="primary"
+        (click)="viewGroup('Properties')">Properties</button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button full color="primary">System</button>
+        <button ion-button full 
+        color="primary"
+        (click)="viewGroup('System')">System</button>
       </ion-col>
     </ion-row>
   </ion-grid>

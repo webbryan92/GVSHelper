@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons left>
+            <button ion-button icon-only navPop>
+                <ion-icon name="close"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title align-center>
+            {{category}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding class="grad">
+    <table width = 100%>
+        <tbody>
+            <tr >
+                <th>Term</th>
+                <th>Definition</th>
+            </tr>
+            <ng-container *ngFor="let term of terms | async">
+                <tr class="odd" *ngIf="filter(term)">
+                    <th>{{term.payload.val().name}}</th>
+                    <td>{{term.payload.val().description}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</ion-content>
