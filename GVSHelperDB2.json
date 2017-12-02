@@ -425,5 +425,174 @@
                 }
             }
         }
+        "0": {
+            "cost": 400,
+            "name": "RX-78 Gundam",
+            "imgsrc": "assets/imgs/Gundam-Thumbnail0.png",
+            "pilots": {
+                "0": "Amuro Ray",
+                "1": "Ryu Jose"
+            },
+            "shooting": {
+                "1": {
+                    "type": "A",
+                    "name": "Beam Rifle",
+                    "ammo": "7",
+                    "damage": "70",
+                    "cancels": "AB,AC,BC",
+                    "vernier": "No",
+                    "steppable": "Yes",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "Over-the-shoulder shot when facing away"
+                },
+                "2": {
+                    "type": "AB",
+                    "name": "Hyper Bazooka",
+                    "ammo": "3",
+                    "damage": "99",
+                    "cancels": "AC",
+                    "vernier": "Yes",
+                    "steppable": "No",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
+                },
+                "3": {
+                    "type": "AC",
+                    "name": "Beam Javelin",
+                    "ammo": "-",
+                    "damage": "90-140-190",
+                    "cancels": "-",
+                    "vernier": "Yes",
+                    "steppable": "No",
+                    "stun": "Yes",
+                    "untechable": "No",
+                    "notes": "Hold input to charge"
+                },
+                "4": {
+                    "type": "BC",
+                    "name": "Gundam Hammer",
+                    "ammo": "-",
+                    "damage": "24 to 114",
+                    "cancels": "-",
+                    "vernier": "Yes",
+                    "steppable": "No",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "Multi hit"
+                },
+                "5": {
+                    "type": "CSA",
+                    "name": "Beam Rifle(Sniper)",
+                    "ammo": "-",
+                    "damage": "120",
+                    "cancels": "-",
+                    "vernier": "Yes",
+                    "steppable": "No",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "High Velocity"
+                }
+            },
+            "fighting": {
+                "1": {
+                    "type": "Neutral Melee",
+                    "name": "Beam Saber",
+                    "input": "BBB",
+                    "damage": "173",
+                    "routes": "BC(1-2nd hit)",
+                    "steppable": "Yes",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
+                },
+                "2": {
+                    "type": "Neutral Melee",
+                    "name": "Beam Saber",
+                    "input": "BB(8)BB",
+                    "damage": "215",
+                    "routes": "BC(1-3rd hit)",
+                    "steppable": "yes",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
+                },
+                "3": {
+                    "type": "Forward Melee",
+                    "name": "Beam Saber Puncture",
+                    "input": "8B",
+                    "damage": "84",
+                    "routes": "BC",
+                    "steppable": "yes",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "-"
+                },
+                "4": {
+                    "type": "Side Melee",
+                    "name": "Gundam Hammer",
+                    "input": "6BB",
+                    "damage": "154",
+                    "routes": "BC(1-2nd hit)",
+                    "steppable": "yes",
+                    "stun": "No",
+                    "untechable": "No",
+                    "notes": "Wide swing, beside and behind"
+                },
+                "5": {
+                    "type": "Back Melee",
+                    "name": "Battle Counter",
+                    "input": "2B",
+                    "damage": "80",
+                    "routes": "-",
+                    "steppable": "yes",
+                    "stun": "Yes",
+                    "untechable": "No",
+                    "notes": "Pushes forward after a delay blocking shots"
+                },
+                "6": {
+                    "type": "Back Melee",
+                    "name": "Shield Throw and Leap",
+                    "input": "2B-A-B",
+                    "damage": "215",
+                    "routes": "-",
+                    "steppable": "No",
+                    "stun": "Yes",
+                    "untechable": "No",
+                    "notes": "Shield Throw not steppable"
+                },
+                "7": {
+                    "type": "Boost Dash Melee",
+                    "name": "Combination attack",
+                    "input": "BD8BBB",
+                    "damage": "190",
+                    "routes": "-",
+                    "steppable": "yes",
+                    "stun": "Yes",
+                    "untechable": "No",
+                    "notes": "-"
+                },
+                "8": {
+                    "type": "Special Fighting",
+                    "name": "Stomp",
+                    "input": "BC during melee",
+                    "damage": "147 to 210",
+                    "routes": "-",
+                    "steppable": "yes",
+                    "stun": "No",
+                    "untechable": "Yes",
+                    "notes": "Usable during most melee, Ground bounces"
+                }
+            },
+            "special": {
+                "0": {
+                    "name": "Last Shooting",
+                    "input": "ABC",
+                    "damage": "296/274",
+                    "notes": "Two Stage Super, melee slash then upwards shot"
+                }
+            }
+        }
     }
 }
