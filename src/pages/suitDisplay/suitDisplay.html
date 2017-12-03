@@ -15,7 +15,8 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <img width="128" height="128" src="{{suit.imgsrc}}">
+        <img width="128" height="128" src="{{suit.imgsrc}}"
+        onerror="this.src = 'assets/imgs/placeholder.png'">
       </ion-col>
       <ion-col class="pilots">
         <h4>Pilots:</h4>
@@ -40,7 +41,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <img src="assets/imgs/Untech.png">
+        <img src="assets/imgs/Untechable.png">
         = Untechable
       </ion-col>
       <ion-col>
@@ -88,7 +89,7 @@
             <td>
               <img *ngIf="(shot.steppable) === 'Yes'" src="assets/imgs/Step.png">
               <img *ngIf="(shot.stun) === 'Yes'" src="assets/imgs/Stun.png">
-              <img *ngIf="(shot.untechable) === 'Yes'" src="assets/imgs/Untech.png">
+              <img *ngIf="(shot.untechable) === 'Yes'" src="assets/imgs/Untechable.png">
               <img *ngIf="(shot.vernier) === 'Yes'" src="assets/imgs/Vernier.png">
             </td>
             <td colspan="3">{{shot.notes}}</td>

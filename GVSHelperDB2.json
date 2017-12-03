@@ -258,7 +258,7 @@
     "Suits": {
         "0": {
             "cost": 400,
-            "name": "RX-78 Gundam",
+            "name": "Gundam",
             "imgsrc": "assets/imgs/Gundam-Thumbnail0.png",
             "pilots": {
                 "0": "Amuro Ray",
@@ -424,11 +424,11 @@
                     "notes": "Two Stage Super, melee slash then upwards shot"
                 }
             }
-        }
-        "0": {
-            "cost": 400,
-            "name": "RX-78 Gundam",
-            "imgsrc": "assets/imgs/Gundam-Thumbnail0.png",
+        },
+        "1": {
+            "cost": 300,
+            "name": "Barbatos",
+            "imgsrc": "dead",
             "pilots": {
                 "0": "Amuro Ray",
                 "1": "Ryu Jose"
