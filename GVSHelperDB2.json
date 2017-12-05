@@ -344,7 +344,7 @@
                     "input": "BB(8)BB",
                     "damage": "215",
                     "routes": "BC(1-3rd hit)",
-                    "steppable": "yes",
+                    "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "-"
@@ -355,7 +355,7 @@
                     "input": "8B",
                     "damage": "84",
                     "routes": "BC",
-                    "steppable": "yes",
+                    "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "-"
@@ -366,7 +366,7 @@
                     "input": "6BB",
                     "damage": "154",
                     "routes": "BC(1-2nd hit)",
-                    "steppable": "yes",
+                    "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "Wide swing, beside and behind"
@@ -377,7 +377,7 @@
                     "input": "2B",
                     "damage": "80",
                     "routes": "-",
-                    "steppable": "yes",
+                    "steppable": "Yes",
                     "stun": "Yes",
                     "untechable": "No",
                     "notes": "Pushes forward after a delay blocking shots"
@@ -399,7 +399,7 @@
                     "input": "BD8BBB",
                     "damage": "190",
                     "routes": "-",
-                    "steppable": "yes",
+                    "steppable": "Yes",
                     "stun": "Yes",
                     "untechable": "No",
                     "notes": "-"
@@ -410,7 +410,7 @@
                     "input": "BC during melee",
                     "damage": "147 to 210",
                     "routes": "-",
-                    "steppable": "yes",
+                    "steppable": "Yes",
                     "stun": "No",
                     "untechable": "Yes",
                     "notes": "Usable during most melee, Ground bounces"
