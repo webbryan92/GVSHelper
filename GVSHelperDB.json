@@ -910,3 +910,22 @@
     }
 }
 
+"2": {
+    "cost": 300,
+    "name": "Barbatos",
+    "imgsrc": "assets/imgs/Barbatos.png",
+    "pilots": {
+        "0": "Mikazuki Augus"
+    },
+    "health": 540,
+    "ma": "No",
+    "shooting": {
+        "0": 
+    },
+    "fighting": {
+        "0": 
+    },
+    "special": {
+        "0": {}
+    }
+}

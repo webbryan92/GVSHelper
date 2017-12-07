@@ -1,5 +1,5 @@
 {
-    "Terminology":{
+    "Terminology": {
         "0": {
             "category": "Shorthand",
             "name": "Numpad Notation",
@@ -264,61 +264,73 @@
                 "0": "Amuro Ray",
                 "1": "Ryu Jose"
             },
+            "health": 620,
+            "ma": "No",
             "shooting": {
-                "1": {
+                "0": {
                     "type": "A",
                     "name": "Beam Rifle",
-                    "ammo": "7",
-                    "damage": "70",
+                    "ammo": 7,
+                    "damage": 70,
                     "cancels": "AB,AC,BC",
+                    "cooldown": 3,
+                    "down value": 2,
                     "vernier": "No",
                     "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "Over-the-shoulder shot when facing away"
                 },
-                "2": {
+                "1": {
                     "type": "AB",
                     "name": "Hyper Bazooka",
-                    "ammo": "3",
-                    "damage": "99",
+                    "ammo": 3,
+                    "damage": 99,
                     "cancels": "AC",
+                    "cooldown": 4.5,
+                    "down value": 2.5,
                     "vernier": "Yes",
                     "steppable": "No",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "-"
                 },
-                "3": {
+                "2": {
                     "type": "AC",
                     "name": "Beam Javelin",
                     "ammo": "-",
                     "damage": "90-140-190",
                     "cancels": "-",
+                    "cooldown": "-",
+                    "down value": "2.0, 2.5, 3.0",
                     "vernier": "Yes",
                     "steppable": "No",
                     "stun": "Yes",
                     "untechable": "No",
-                    "notes": "Hold input to charge"
+                    "notes": "Hold input to charge up to lvl 3"
                 },
-                "4": {
+                "3": {
                     "type": "BC",
                     "name": "Gundam Hammer",
                     "ammo": "-",
                     "damage": "24 to 114",
                     "cancels": "-",
+                    "cooldown": "-",
+                    "down value": 2,
                     "vernier": "Yes",
                     "steppable": "No",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "Multi hit"
                 },
-                "5": {
+                "4": {
                     "type": "CSA",
                     "name": "Beam Rifle(Sniper)",
                     "ammo": "-",
-                    "damage": "120",
+                    "damage": 120,
                     "cancels": "-",
+                    "cooldown": 2,
+                    "down value": 3,
                     "vernier": "Yes",
                     "steppable": "No",
                     "stun": "No",
@@ -327,86 +339,78 @@
                 }
             },
             "fighting": {
-                "1": {
+                "0": {
                     "type": "Neutral Melee",
-                    "name": "Beam Saber",
-                    "input": "BBB",
-                    "damage": "173",
+                    "input": "5BBB",
+                    "damage": 173,
                     "routes": "BC(1-2nd hit)",
                     "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "-"
                 },
-                "2": {
+                "1": {
                     "type": "Neutral Melee",
-                    "name": "Beam Saber",
-                    "input": "BB(8)BB",
-                    "damage": "215",
+                    "input": "5BB8BB",
+                    "damage": 215,
                     "routes": "BC(1-3rd hit)",
                     "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "-"
                 },
-                "3": {
+                "2": {
                     "type": "Forward Melee",
-                    "name": "Beam Saber Puncture",
                     "input": "8B",
-                    "damage": "84",
+                    "damage": 84,
                     "routes": "BC",
                     "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "-"
                 },
-                "4": {
+                "3": {
                     "type": "Side Melee",
-                    "name": "Gundam Hammer",
                     "input": "6BB",
-                    "damage": "154",
+                    "damage": 154,
                     "routes": "BC(1-2nd hit)",
                     "steppable": "Yes",
                     "stun": "No",
                     "untechable": "No",
                     "notes": "Wide swing, beside and behind"
                 },
-                "5": {
+                "4": {
                     "type": "Back Melee",
-                    "name": "Battle Counter",
                     "input": "2B",
-                    "damage": "80",
+                    "damage": 80,
                     "routes": "-",
                     "steppable": "Yes",
                     "stun": "Yes",
                     "untechable": "No",
-                    "notes": "Pushes forward after a delay blocking shots"
+                    "notes": "Counter, pushes forward after a delay blocking shots"
                 },
-                "6": {
+                "5": {
                     "type": "Back Melee",
-                    "name": "Shield Throw and Leap",
                     "input": "2B-A-B",
-                    "damage": "215",
+                    "damage": 215,
                     "routes": "-",
                     "steppable": "No",
                     "stun": "Yes",
                     "untechable": "No",
                     "notes": "Shield Throw not steppable"
                 },
-                "7": {
+                "6": {
                     "type": "Boost Dash Melee",
-                    "name": "Combination attack",
-                    "input": "BD8BBB",
-                    "damage": "190",
+                    "input": "CC8BBB",
+                    "damage": 190,
                     "routes": "-",
                     "steppable": "Yes",
                     "stun": "Yes",
                     "untechable": "No",
                     "notes": "-"
                 },
-                "8": {
+                "7": {
                     "type": "Special Fighting",
-                    "name": "Stomp",
                     "input": "BC during melee",
                     "damage": "147 to 210",
                     "routes": "-",
@@ -421,176 +425,7 @@
                     "name": "Last Shooting",
                     "input": "ABC",
                     "damage": "296/274",
-                    "notes": "Two Stage Super, melee slash then upwards shot"
-                }
-            }
-        },
-        "1": {
-            "cost": 300,
-            "name": "Barbatos",
-            "imgsrc": "dead",
-            "pilots": {
-                "0": "Amuro Ray",
-                "1": "Ryu Jose"
-            },
-            "shooting": {
-                "1": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": "7",
-                    "damage": "70",
-                    "cancels": "AB,AC,BC",
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Over-the-shoulder shot when facing away"
-                },
-                "2": {
-                    "type": "AB",
-                    "name": "Hyper Bazooka",
-                    "ammo": "3",
-                    "damage": "99",
-                    "cancels": "AC",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "3": {
-                    "type": "AC",
-                    "name": "Beam Javelin",
-                    "ammo": "-",
-                    "damage": "90-140-190",
-                    "cancels": "-",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Hold input to charge"
-                },
-                "4": {
-                    "type": "BC",
-                    "name": "Gundam Hammer",
-                    "ammo": "-",
-                    "damage": "24 to 114",
-                    "cancels": "-",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Multi hit"
-                },
-                "5": {
-                    "type": "CSA",
-                    "name": "Beam Rifle(Sniper)",
-                    "ammo": "-",
-                    "damage": "120",
-                    "cancels": "-",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "High Velocity"
-                }
-            },
-            "fighting": {
-                "1": {
-                    "type": "Neutral Melee",
-                    "name": "Beam Saber",
-                    "input": "BBB",
-                    "damage": "173",
-                    "routes": "BC(1-2nd hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "2": {
-                    "type": "Neutral Melee",
-                    "name": "Beam Saber",
-                    "input": "BB(8)BB",
-                    "damage": "215",
-                    "routes": "BC(1-3rd hit)",
-                    "steppable": "yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "3": {
-                    "type": "Forward Melee",
-                    "name": "Beam Saber Puncture",
-                    "input": "8B",
-                    "damage": "84",
-                    "routes": "BC",
-                    "steppable": "yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "Side Melee",
-                    "name": "Gundam Hammer",
-                    "input": "6BB",
-                    "damage": "154",
-                    "routes": "BC(1-2nd hit)",
-                    "steppable": "yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Wide swing, beside and behind"
-                },
-                "5": {
-                    "type": "Back Melee",
-                    "name": "Battle Counter",
-                    "input": "2B",
-                    "damage": "80",
-                    "routes": "-",
-                    "steppable": "yes",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Pushes forward after a delay blocking shots"
-                },
-                "6": {
-                    "type": "Back Melee",
-                    "name": "Shield Throw and Leap",
-                    "input": "2B-A-B",
-                    "damage": "215",
-                    "routes": "-",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Shield Throw not steppable"
-                },
-                "7": {
-                    "type": "Boost Dash Melee",
-                    "name": "Combination attack",
-                    "input": "BD8BBB",
-                    "damage": "190",
-                    "routes": "-",
-                    "steppable": "yes",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "8": {
-                    "type": "Special Fighting",
-                    "name": "Stomp",
-                    "input": "BC during melee",
-                    "damage": "147 to 210",
-                    "routes": "-",
-                    "steppable": "yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Usable during most melee, Ground bounces"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "Last Shooting",
-                    "input": "ABC",
-                    "damage": "296/274",
-                    "notes": "Two Stage Super, melee slash then upwards shot"
+                    "notes": "Two stage super, armored dash attack then upwards shot"
                 }
             }
         }
