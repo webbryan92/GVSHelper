@@ -15,7 +15,7 @@ import { HPPage } from '../health/health';
   providers: [TierService]
 })
 export class TierPage implements OnInit {
-  id: any;  
+  id: any;
   suits: Observable<any>;
   suitNames: string[];
   constructor(public navCtrl: NavController, public params: NavParams, private tierService: TierService) {
@@ -23,7 +23,7 @@ export class TierPage implements OnInit {
       this.id = params.data.costId;
   }
   getSuits(): void {
-    this.suits = this.tierService.getTier();
+    this.suits = this.tierService.getTier(this.id);
   }
   ngOnInit(): void {
     this.getSuits();
