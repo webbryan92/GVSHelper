@@ -1,0 +1,13 @@
+<ion-col
+  col-4 padding
+  align-self-start
+  tappable
+  align="center"
+  *ngIf="filter(suit)"
+  (click)="viewSuit(suit)">
+    <img
+      width="64" height="64"
+      src= "{{suitSrc}}"
+      onerror="this.src = 'assets/imgs/placeholder.png'">
+        <p>{{suit.name}}</p>
+</ion-col>
