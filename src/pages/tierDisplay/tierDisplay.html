@@ -14,23 +14,10 @@
       </button>
     </div>
     </ion-buttons>
-  <ion-grid fixed>
+  <ion-grid>
     <ion-row>
       <ng-container *ngFor="let suit of suits | async; let i = index">        
-          <ion-col col-4
-          padding
-          align-self-start
-          tappable
-          align="center"
-          *ngIf="filter(suit)"
-          (click)="viewSuit(suit)">
-          <img width="64" height="64"
-          src= "{{suit.payload.val().imgsrc}}"
-          onerror="this.src = 'assets/imgs/placeholder.png'">
-          <p>
-          {{suit.payload.val().name}}
-          </p>
-          </ion-col>
+        <gh-suit-grid-item [suit]="suit"></gh-suit-grid-item>
       </ng-container>
     </ion-row>
   </ion-grid>

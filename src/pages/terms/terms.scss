@@ -1,4 +1,4 @@
-page-about { 
+page-terms { 
     ion-title {
         position: absolute;
         top: 0;
@@ -15,4 +15,9 @@ page-about {
             color($colors, background-gradient, base) 0%, 
             color($colors, background-gradient, contrast) 100%);        
     }
+    .button{
+        border: 2x solid #000000;
+        color: color($colors, buttonColor);
+        background: linear-gradient(to bottom, color($colors, buttons, base) 0%,color($colors, buttons, contrast) 100%);
+      }
 }

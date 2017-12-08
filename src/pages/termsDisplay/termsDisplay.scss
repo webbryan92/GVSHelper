@@ -30,7 +30,13 @@ tbody tr:last-child td:first-child {
 }
 tbody tr:last-child td:last-child {
     border-radius: 0 0 10px 0;
-}    
+}
+tbody tr:last-child th:first-child {
+    border-radius: 0 0 0 10px;
+}
+tbody tr:last-child th:last-child {
+    border-radius: 0 0 10px 0;
+}      
 thead tr td {
     border-radius: 10px 10px 0 0;
 }

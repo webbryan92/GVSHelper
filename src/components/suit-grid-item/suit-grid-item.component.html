@@ -1,0 +1,10 @@
+<ion-col padding
+    align-self-start
+    tappable
+    align="center"
+    (click)="viewSuit(suit)">
+        <img width="64" height="64"
+            src= "{{suitSrc}}"
+            onerror="this.src = `assets/imgs/placeholder.png`">
+                <p>{{suit.payload.val().name}}</p>
+</ion-col>

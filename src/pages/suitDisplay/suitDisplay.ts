@@ -31,10 +31,10 @@ export class SuitPage {
   }
 
   ngOnInit(): void {
-    this.pilots = this.suitService.getPilots(this.suitRef.key);
-    this.shooting = this.suitService.getRanged(this.suitRef.key);
-    this.melees = this.suitService.getMelee(this.suitRef.key);
-    this.specials = this.suitService.getSpecials(this.suitRef.key);
+    this.pilots = this.suitService.getPilots(this.suit.cost, this.suitRef.key);
+    this.shooting = this.suitService.getRanged(this.suit.cost, this.suitRef.key);
+    this.melees = this.suitService.getMelee(this.suit.cost, this.suitRef.key);
+    this.specials = this.suitService.getSpecials(this.suit.cost, this.suitRef.key);
   }
   
   previousType(type): boolean{

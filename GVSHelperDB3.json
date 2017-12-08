@@ -256,2060 +256,2068 @@
         }
     },
     "Suits": {
-        "0": {
-            "cost": 400,
-            "name": "Gundam",
-            "imgsrc": "assets/imgs/Gundam.png",
-            "pilots": {
-                "0": "Amuro Ray",
-                "1": "Ryu Jose"
-            },
-            "health": 620,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": 7,
-                    "damage": 70,
-                    "cancels": "AB,AC,BC",
-                    "cooldown": 3,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Over-the-shoulder shot when facing away"
+        "500": {
+            "4": {
+                "cost": 500,
+                "name": "Hi-Nu",
+                "imgsrc": "assets/imgs/Hi-Nu.png",
+                "pilots": {
+                    "0": "Amuro Ray"
                 },
-                "1": {
-                    "type": "AB",
-                    "name": "Hyper Bazooka",
-                    "ammo": 3,
-                    "damage": 99,
-                    "cancels": "AC",
-                    "cooldown": 4.5,
-                    "down value": 2.5,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "health": 700,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Beam Rifle",
+                        "ammo": 6,
+                        "damage": 75,
+                        "cancels": "See Notes",
+                        "cooldown": 3,
+                        "valueDown": "2",
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Cancels: AB, DirAB, AC, BC, DirBC, 2B (In Psychoframe) All Melee and BC"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Fin Funnel",
+                        "ammo": "12(24)",
+                        "damage": 30,
+                        "cancels": "DirAB, AC",
+                        "cooldown": 5,
+                        "valueDown": "0.9",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Fires twice in PF"
+                    },
+                    "2": {
+                        "type": "DirAB",
+                        "name": "Fin Funnel",
+                        "ammo": "12(24)",
+                        "damage": 30,
+                        "cancels": "AB, AC",
+                        "cooldown": 5,
+                        "valueDown": "0.9",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Retracks then fires again in PF"
+                    },
+                    "3": {
+                        "type": "AC",
+                        "name": "Nu Hyper Bazooka",
+                        "ammo": 3,
+                        "damage": 114,
+                        "cancels": "-",
+                        "cooldown": 5,
+                        "valueDown": "2",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Shots repeat if input is held, Only reloads at 0"
+                    },
+                    "4": {
+                        "type": "BC",
+                        "name": "Psychoframe Resonance",
+                        "ammo": 100,
+                        "damage": "-",
+                        "cancels": "-",
+                        "cooldown": 30,
+                        "valueDown": "-",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Mobility Increase"
+                    },
+                    "5": {
+                        "type": "CSA",
+                        "name": "Beam Rifle (High Output)",
+                        "ammo": "-",
+                        "damage": 120,
+                        "cancels": "-",
+                        "cooldown": 2,
+                        "valueDown": "5",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "6": {
+                        "type": "CSB",
+                        "name": "Hyper Mega Bazooka Launcher",
+                        "ammo": "-",
+                        "damage": 195,
+                        "cancels": "-",
+                        "cooldown": 2,
+                        "valueDown": "5^",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "2": {
-                    "type": "AC",
-                    "name": "Beam Javelin",
-                    "ammo": "-",
-                    "damage": "90-140-190",
-                    "cancels": "-",
-                    "cooldown": "-",
-                    "down value": "2.0, 2.5, 3.0",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Hold input to charge up to lvl 3"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBB",
+                        "damage": 184,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Forward Melee",
+                        "input": "8BB",
+                        "damage": 219,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "Side Melee",
+                        "input": "6BBB",
+                        "damage": 171,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": 85,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "Back Melee",
+                        "input": "2B~A",
+                        "damage": 199,
+                        "routes": "-",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Boosts back firing 2 shots with like a billion down value"
+                    },
+                    "5": {
+                        "type": "BD Melee",
+                        "input": "CC8BBB",
+                        "damage": 189,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "6": {
+                        "type": "BC",
+                        "input": "PF Attack",
+                        "damage": 95,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "7": {
+                        "type": "DirBC",
+                        "input": "PF Attack",
+                        "damage": 95,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    }
                 },
-                "3": {
-                    "type": "BC",
-                    "name": "Gundam Hammer",
-                    "ammo": "-",
-                    "damage": "24 to 114",
-                    "cancels": "-",
-                    "cooldown": "-",
-                    "down value": 2,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Multi hit"
-                },
-                "4": {
-                    "type": "CSA",
-                    "name": "Beam Rifle(Sniper)",
-                    "ammo": "-",
-                    "damage": 120,
-                    "cancels": "-",
-                    "cooldown": 2,
-                    "down value": 3,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "High Velocity"
+                "special": {
+                    "0": {
+                        "name": "Hyper Mega Bazooka Launcher (Maximum Output)",
+                        "input": "ABC",
+                        "damage": "304/302",
+                        "notes": "Uses funnels to create a projectile barrier, then fires a gerobi"
+                    }
                 }
             },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBB",
-                    "damage": 173,
-                    "routes": "BC(1-2nd hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+            "5": {
+                "cost": 500,
+                "name": "Sinanju",
+                "imgsrc": "assets/imgs/Sinanju.png",
+                "pilots": {
+                    "0": "Full Frontal"
                 },
-                "1": {
-                    "type": "Neutral Melee",
-                    "input": "5BB8BB",
-                    "damage": 215,
-                    "routes": "BC(1-3rd hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "health": 680,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Beam Rifle",
+                        "ammo": 1,
+                        "damage": 75,
+                        "cancels": "AB,AC,BC",
+                        "cooldown": 3,
+                        "valueDown": "2",
+                        "vernier": "No",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Barrel Roll",
+                        "ammo": 4,
+                        "damage": 106,
+                        "cancels": "AB(Once)",
+                        "cooldown": 8,
+                        "valueDown": "2.5",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Inputting 4 or 6 will cause you to roll.  Neutral version is essentially useless."
+                    },
+                    "2": {
+                        "type": "AC",
+                        "name": "Meteor Kick",
+                        "ammo": "2(4)",
+                        "damage": 90,
+                        "cancels": "-",
+                        "cooldown": 9,
+                        "valueDown": "1.8",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Inputting (8/4/6)AC and then diving results in substantial momentum to be kept. Ammo count increases to 4 in burst."
+                    },
+                    "3": {
+                        "type": "CSA",
+                        "name": "Grenade Launcher",
+                        "ammo": "-",
+                        "damage": 120,
+                        "cancels": "-",
+                        "cooldown": 2.5,
+                        "valueDown": "5.6",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Instant KD"
+                    }
                 },
-                "2": {
-                    "type": "Forward Melee",
-                    "input": "8B",
-                    "damage": 84,
-                    "routes": "BC",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBB",
+                        "damage": 184,
+                        "routes": "AC, BC",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Neutral Melee",
+                        "input": "5BBA",
+                        "damage": 213,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Instant KD"
+                    },
+                    "2": {
+                        "type": "Neutral Melee",
+                        "input": "5BB8B",
+                        "damage": 244,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Ground Bounce"
+                    },
+                    "3": {
+                        "type": "Neutral Melee",
+                        "input": "5B[B]8B",
+                        "damage": "133-180",
+                        "routes": "AC",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "Forward Melee",
+                        "input": "8BB",
+                        "damage": 166,
+                        "routes": "AC, BC(first series)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "5": {
+                        "type": "Forward Melee",
+                        "input": "8B2B",
+                        "damage": 142,
+                        "routes": "AC",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "6": {
+                        "type": "Side Melee",
+                        "input": "6BB",
+                        "damage": 140,
+                        "routes": "AC, BC(first hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "7": {
+                        "type": "Side Melee",
+                        "input": "6B2B",
+                        "damage": 135,
+                        "routes": "AC, BC(first hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "8": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": "156(104)",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Instant KD, if meteor spawns inside the wall the move will do less dmg and take longer."
+                    },
+                    "9": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8BB",
+                        "damage": 158,
+                        "routes": "AC(2nd hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "10": {
+                        "type": "Special Melee",
+                        "input": "(BC)B",
+                        "damage": 206,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Blocks beams in front"
+                    }
                 },
-                "3": {
-                    "type": "Side Melee",
-                    "input": "6BB",
-                    "damage": 154,
-                    "routes": "BC(1-2nd hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Wide swing, beside and behind"
-                },
-                "4": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": 80,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Counter, pushes forward after a delay blocking shots"
-                },
-                "5": {
-                    "type": "Back Melee",
-                    "input": "2B-A-B",
-                    "damage": 215,
-                    "routes": "-",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Shield Throw not steppable"
-                },
-                "6": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8BBB",
-                    "damage": 190,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "7": {
-                    "type": "Special Fighting",
-                    "input": "BC during melee",
-                    "damage": "147 to 210",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Usable during most melee, Ground bounces"
+                "special": {
+                    "0": {
+                        "name": "The Return",
+                        "input": "ABC",
+                        "damage": "321/286",
+                        "notes": "Armored dash attack into melee combo"
+                    },
+                    "1": {
+                        "name": "Beam Rifle(Continuous Fire)",
+                        "input": "2ABC",
+                        "damage": "288/277",
+                        "notes": "Continuous shooting while rolling"
+                    }
                 }
             },
-            "special": {
-                "0": {
-                    "name": "Last Shooting",
-                    "input": "ABC",
-                    "damage": "296/274",
-                    "notes": "Two stage super, armored dash attack then upwards shot"
-                }
-            }
-        },
-        "1": {
-            "cost": 300,
-            "name": "Barbatos",
-            "imgsrc": "assets/imgs/Barbatos.png",
-            "pilots": {
-                "0": "Mikazuki Augus"
-            },
-            "health": 540,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "300mm Smoothbore Gun",
-                    "ammo": 5,
-                    "damage": 65,
-                    "cancels": "AB, AC, BC",
-                    "cooldown": 3,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Physical"
+            "6": {
+                "cost": 500,
+                "name": "Zeta",
+                "imgsrc": "assets/imgs/Zeta_icon.png",
+                "pilots": {
+                    "0": "Kamille Bidan",
+                    "1": "Roux Louka"
                 },
-                "1": {
-                    "type": "AB",
-                    "name": "Katana Throw",
-                    "ammo": 1,
-                    "damage": 70,
-                    "cancels": "-",
-                    "cooldown": 6,
-                    "down value": 2,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Heavy stagger"
+                "health": 700,
+                "ma": "Yes",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Beam Rifle",
+                        "ammo": 6,
+                        "damage": 75,
+                        "cancels": "AB, AC, BC, 2B",
+                        "cooldown": "Reload",
+                        "valueDown": "2",
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Press main when empty to reload manually."
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Grenade Launcher",
+                        "ammo": 2,
+                        "damage": "76(128)",
+                        "cancels": "-",
+                        "cooldown": 4.5,
+                        "valueDown": "1.5 per",
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Possible to boost dash before 2nd shot to only consume one at a time."
+                    },
+                    "2": {
+                        "type": "AC",
+                        "name": "Hyper Mega Launcher",
+                        "ammo": 2,
+                        "damage": 130,
+                        "cancels": "BC",
+                        "cooldown": 7,
+                        "valueDown": "5.6",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Instant KD"
+                    },
+                    "3": {
+                        "type": "BC",
+                        "name": "Rapid Transformation",
+                        "ammo": 1,
+                        "damage": "130-192",
+                        "cancels": "AB(MA), BC(MA)",
+                        "cooldown": 6,
+                        "valueDown": ".8-5^",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "2B",
+                        "name": "Saber throw",
+                        "ammo": "-",
+                        "damage": 80,
+                        "cancels": "AC",
+                        "cooldown": "-",
+                        "valueDown": "2",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "5": {
+                        "type": "CSA",
+                        "name": "Beam Confuse",
+                        "ammo": "-",
+                        "damage": "Varied",
+                        "cancels": "-",
+                        "cooldown": 1.5,
+                        "valueDown": ".5-2.5",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "6": {
+                        "type": "Mobile Armor",
+                        "name": "-",
+                        "ammo": "-",
+                        "damage": "-",
+                        "cancels": "-",
+                        "cooldown": "-",
+                        "valueDown": "-",
+                        "vernier": "No",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "7": {
+                        "type": "A(MA)",
+                        "name": "Beam Rifle & Gun",
+                        "ammo": 2,
+                        "damage": "98-104",
+                        "cancels": "AB, BC",
+                        "cooldown": 4,
+                        "valueDown": 4,
+                        "vernier": "No",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "8": {
+                        "type": "AB(MA)",
+                        "name": "Grenade Launcher",
+                        "ammo": 2,
+                        "damage": "76(128)",
+                        "cancels": "-",
+                        "cooldown": 4.5,
+                        "valueDown": "1.5 per",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Ammo shared with AB"
+                    },
+                    "9": {
+                        "type": "AC(MA)",
+                        "name": "Hyper Mega Launcher",
+                        "ammo": 2,
+                        "damage": 120,
+                        "cancels": "AB, BC",
+                        "cooldown": 7,
+                        "valueDown": 5.6,
+                        "vernier": "No",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Ammo shared with AC"
+                    }
                 },
-                "2": {
-                    "type": "AC",
-                    "name": "Command Dash",
-                    "ammo": "-",
-                    "damage": "-",
-                    "cancels": "AB, BC, B",
-                    "cooldown": "-",
-                    "down value": "-",
-                    "vernier": "Yes",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "fighting": {
+                    "0": {
+                        "type": "Neutal Melee",
+                        "input": "5BBBBB",
+                        "damage": 232,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Forward Melee",
+                        "input": "8BB",
+                        "damage": 135,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "Side Melee",
+                        "input": "6BBB",
+                        "damage": 176,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8BB",
+                        "damage": 138,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "Follow Up",
+                        "input": "8B(Notes)",
+                        "damage": 60,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Input during 5B or 6B string except finisher"
+                    },
+                    "5": {
+                        "type": "Follow Up",
+                        "input": "AC(Notes)",
+                        "damage": 81,
+                        "routes": "BC",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Input during any non finisher melee."
+                    },
+                    "6": {
+                        "type": "Follow Up",
+                        "input": "BC(Notes)",
+                        "damage": 133,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Input during any non finisher melee."
+                    },
+                    "7": {
+                        "type": "MA Melee",
+                        "input": "B(MA)",
+                        "damage": 100,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Eligable for AC/BC Follow Up"
+                    },
+                    "8": {
+                        "type": "MA Special Melee",
+                        "input": "BC(MA)-B(Mash)",
+                        "damage": "113-126 (283/246)",
+                        "routes": "-",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Powers up during Blaze or Lightning."
+                    }
                 },
-                "3": {
-                    "type": "AC~A",
-                    "name": "300mm Smoothbore Gun",
-                    "ammo": 5,
-                    "damage": 100,
-                    "cancels": "-",
-                    "cooldown": "-",
-                    "down value": 3,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Soft KD"
-                },
-                "4": {
-                    "type": "CSA",
-                    "name": "Mace Throw",
-                    "ammo": "-",
-                    "damage": 85,
-                    "cancels": "-",
-                    "cooldown": 2,
-                    "down value": 2,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                }
-            },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBBB",
-                    "damage": 211,
-                    "routes": "AC/BC(1-3rd hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "Neutral Melee",
-                    "input": "5B8B",
-                    "damage": "234-264",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "8B can be done after 5BB and 5BBB"
-                },
-                "2": {
-                    "type": "Neutral Melee",
-                    "input": "5B2B",
-                    "damage": "229-243",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "2B can be done after 5BB and 5BBB, instant KD"
-                },
-                "3": {
-                    "type": "Forward Melee",
-                    "input": "8B",
-                    "damage": 128,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Hops slightly"
-                },
-                "4": {
-                    "type": "Side Melee",
-                    "input": "6BBB",
-                    "damage": 128,
-                    "routes": "AC/BC(1-2nd hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "5": {
-                    "type": "Side Melee",
-                    "input": "6B8B",
-                    "damage": "234-243",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "8B can be done after 6BB"
-                },
-                "6": {
-                    "type": "Side Melee",
-                    "input": "6B2B",
-                    "damage": "229-230",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "2B can be done after 6BB, instant KD"
-                },
-                "7": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": "-",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Counter"
-                },
-                "8": {
-                    "type": "Back Melee",
-                    "input": "2B-B",
-                    "damage": 70,
-                    "routes": "-",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "9": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8BB",
-                    "damage": 124,
-                    "routes": "AC/BC(1st Hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "10": {
-                    "type": "Special Melee",
-                    "input": "5BC",
-                    "damage": 90,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "11": {
-                    "type": "Special Melee",
-                    "input": "6BC",
-                    "damage": 95,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "12": {
-                    "type": "Special Melee",
-                    "input": "2/8BC",
-                    "damage": 80,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Hop"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "Reckless Slash",
-                    "input": "ABC",
-                    "damage": "328/281",
-                    "notes": "Armored dash attack into melee combo"
-                },
-                "1": {
-                    "name": "Skewer",
-                    "input": "2ABC",
-                    "damage": "298/269",
-                    "notes": "Counter"
-                }
-            }
-        },
-        "2": {
-            "cost": 300,
-            "name": "Exia",
-            "imgsrc": "assets/imgs/Exia.png",
-            "pilots": {
-                "0": "Setsuna F Seiei"
-            },
-            "health": "520(100)",
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "GN Sword Rifle Mode",
-                    "ammo": 3,
-                    "damage": 65,
-                    "cancels": "A,AB,AC,BC",
-                    "cooldown": 4,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Chainable br"
-                },
-                "1": {
-                    "type": "AB",
-                    "name": "GN Beam Dagger",
-                    "ammo": 1,
-                    "damage": 69,
-                    "cancels": "BC, 8B",
-                    "cooldown": 3,
-                    "down value": ".5 each",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "4/6 chooses flip direction"
-                },
-                "2": {
-                    "type": "AC",
-                    "name": "Large GN Cannon",
-                    "ammo": 1,
-                    "damage": "21-180",
-                    "cancels": "-",
-                    "cooldown": 14,
-                    "down value": 5.1,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "3": {
-                    "type": "CSA",
-                    "name": "GN Short Blade",
-                    "ammo": "-",
-                    "damage": 55,
-                    "cancels": "-",
-                    "cooldown": 1.5,
-                    "down value": 1,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "A(Repair Mode)",
-                    "name": "GN Sword Rifle Mode",
-                    "ammo": 3,
-                    "damage": 60,
-                    "cancels": "A,AB,AC,BC",
-                    "cooldown": 4,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                }
-            },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBB",
-                    "damage": 179,
-                    "routes": "AB, BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "Neutral Melee",
-                    "input": "5BB8B",
-                    "damage": 207,
-                    "routes": "AB, BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "2": {
-                    "type": "Neutral Melee",
-                    "input": "5B[B]~A",
-                    "damage": "104-151",
-                    "routes": "AB, BC, 2B",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "3": {
-                    "type": "Neutral Melee",
-                    "input": "5BBBBB",
-                    "damage": "280/240",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Trans-Am only"
-                },
-                "4": {
-                    "type": "Forward Melee",
-                    "input": "8B",
-                    "damage": 77,
-                    "routes": "AB, BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "High priority"
-                },
-                "5": {
-                    "type": "Forward Melee",
-                    "input": "8B-A",
-                    "damage": "76-116",
-                    "routes": "AB, BC, 2B",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "6": {
-                    "type": "Side Melee",
-                    "input": "6BBB",
-                    "damage": 170,
-                    "routes": "AB, BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "7": {
-                    "type": "Side Melee",
-                    "input": "6BB8B",
-                    "damage": 206,
-                    "routes": "AB, BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "8": {
-                    "type": "Side Melee",
-                    "input": "6B[B]~A",
-                    "damage": "104~153",
-                    "routes": "AB, BC, 2B",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "9": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": 85,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Hop"
-                },
-                "10": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8BB",
-                    "damage": 134,
-                    "routes": "AB, BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Slashes through"
-                },
-                "11": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8BBBB",
-                    "damage": "268/229",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "12": {
-                    "type": "Special Melee",
-                    "input": "BC",
-                    "damage": 127,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "13": {
-                    "type": "Special Melee",
-                    "input": "6BCB",
-                    "damage": 138,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "14": {
-                    "type": "Special Melee",
-                    "input": "2/8BCB",
-                    "damage": 125,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Blocks shots in front"
-                },
-                "15": {
-                    "type": "Repair Mode",
-                    "input": "-",
-                    "damage": "-",
-                    "routes": "-",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "16": {
-                    "type": "Neutral Melee(R)",
-                    "input": "5BBB",
-                    "damage": 179,
-                    "routes": "BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "17": {
-                    "type": "Neutral Melee(R)",
-                    "input": "5BB8B",
-                    "damage": "?",
-                    "routes": "BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "18": {
-                    "type": "Neutral Melee(R)",
-                    "input": "5BBBBBB",
-                    "damage": "?",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Trans-Am only"
-                },
-                "19": {
-                    "type": "Forward Melee(R)",
-                    "input": "8B",
-                    "damage": 67,
-                    "routes": "BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "20": {
-                    "type": "Side Melee(R)",
-                    "input": "6BB",
-                    "damage": 89,
-                    "routes": "BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "21": {
-                    "type": "Back Melee(R)",
-                    "input": "2B",
-                    "damage": 85,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Hop"
-                },
-                "22": {
-                    "type": "Boost Dash Melee(R)",
-                    "input": "CC8BB",
-                    "damage": 134,
-                    "routes": "BC, 2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "23": {
-                    "type": "Boost Dash Melee(R)",
-                    "input": "CC8BBB",
-                    "damage": "??",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Trans-Am only"
-                },
-                "24": {
-                    "type": "Sub/Special Shooting(R)",
-                    "input": "AB/AC",
-                    "damage": "??",
-                    "routes": "BC,2B",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "GN Armor Type-E",
-                    "input": "ABC",
-                    "damage": "269/230",
-                    "notes": "Armored dash attack into melee combo"
-                },
-                "1": {
-                    "name": "Overboost Stab",
-                    "input": "ABC(In repair)",
-                    "damage": "???",
-                    "notes": "Delayed Armored Stab"
+                "special": {
+                    "0": {
+                        "name": "Giant Beam Saber",
+                        "input": "ABC",
+                        "damage": "278/238",
+                        "notes": "Single High damage swing with super armor."
+                    },
+                    "1": {
+                        "name": "Burst Effect",
+                        "input": "-",
+                        "damage": "-",
+                        "notes": "Super armor on melee's in Burst."
+                    }
                 }
             }
         },
-        "3": {
-            "cost": 400,
-            "name": "GP03",
-            "imgsrc": "assets/imgs/GP03.png",
-            "pilots": {
-                "0": "Kou Uraki"
-            },
-            "health": 620,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Folding Bazookas",
-                    "ammo": 10,
-                    "damage": "76-128",
-                    "cancels": "AB,BC",
-                    "cooldown": 6,
-                    "down value": 2.5,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Fires two per press, boosting early will fire a single shot"
+        "400": {
+            "0": {
+                "cost": 400,
+                "name": "Gundam",
+                "imgsrc": "assets/imgs/Gundam.png",
+                "pilots": {
+                    "0": "Amuro Ray",
+                    "1": "Ryu Jose"
                 },
-                "1": {
-                    "type": "AB",
-                    "name": "Large Missile Pod",
-                    "ammo": 2,
-                    "damage": 75,
-                    "cancels": "DirAB",
-                    "cooldown": 9,
-                    "down value": "-",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Fires in a fan, shares ammo with directional AB"
+                "health": 620,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Beam Rifle",
+                        "ammo": 7,
+                        "damage": 70,
+                        "cancels": "AB,AC,BC",
+                        "cooldown": 3,
+                        "valueDown": 2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Over-the-shoulder shot when facing away"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Hyper Bazooka",
+                        "ammo": 3,
+                        "damage": 99,
+                        "cancels": "AC",
+                        "cooldown": 4.5,
+                        "valueDown": 2.5,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "AC",
+                        "name": "Beam Javelin",
+                        "ammo": "-",
+                        "damage": "90-140-190",
+                        "cancels": "-",
+                        "cooldown": "-",
+                        "valueDown": "2.0, 2.5, 3.0",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "Hold input to charge up to lvl 3"
+                    },
+                    "3": {
+                        "type": "BC",
+                        "name": "Gundam Hammer",
+                        "ammo": "-",
+                        "damage": "24 to 114",
+                        "cancels": "-",
+                        "cooldown": "-",
+                        "valueDown": 2,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Multi hit"
+                    },
+                    "4": {
+                        "type": "CSA",
+                        "name": "Beam Rifle(Sniper)",
+                        "ammo": "-",
+                        "damage": 120,
+                        "cancels": "-",
+                        "cooldown": 2,
+                        "valueDown": 3,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "High Velocity"
+                    }
                 },
-                "2": {
-                    "type": "DirAB",
-                    "name": "Micro Missiles",
-                    "ammo": 2,
-                    "damage": 40,
-                    "cancels": "AB",
-                    "cooldown": 9,
-                    "down value": "-",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Spreads out then converges, shares a cooldown with AB"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBB",
+                        "damage": 173,
+                        "routes": "BC(1-2nd hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Neutral Melee",
+                        "input": "5BB8BB",
+                        "damage": 215,
+                        "routes": "BC(1-3rd hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "Forward Melee",
+                        "input": "8B",
+                        "damage": 84,
+                        "routes": "BC",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "Side Melee",
+                        "input": "6BB",
+                        "damage": 154,
+                        "routes": "BC(1-2nd hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Wide swing, beside and behind"
+                    },
+                    "4": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": 80,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "Counter, pushes forward after a delay blocking shots"
+                    },
+                    "5": {
+                        "type": "Back Melee",
+                        "input": "2B-A-B",
+                        "damage": 215,
+                        "routes": "-",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "Shield Throw not steppable"
+                    },
+                    "6": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8BBB",
+                        "damage": 190,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "7": {
+                        "type": "Special Fighting",
+                        "input": "BC during melee",
+                        "damage": "147 to 210",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Usable during most melee, Ground bounces"
+                    }
                 },
-                "3": {
-                    "type": "AC",
-                    "name": "Mega Beam Cannon",
-                    "ammo": 1,
-                    "damage": 235,
-                    "cancels": "-",
-                    "cooldown": 15,
-                    "down value": 5,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Misses point blank"
-                },
-                "4": {
-                    "type": "BC",
-                    "name": "Explosion Cord",
-                    "ammo": 2,
-                    "damage": 40,
-                    "cancels": "-",
-                    "cooldown": 13,
-                    "down value": 2,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "4/6 BC boosts you to the side/other directions including diagonals will flip you those directions.  Diving out of this move causes you to face your opponent(VERY IMPORTANT)"
-                },
-                "5": {
-                    "type": "BC-A",
-                    "name": "Folding Bazooka",
-                    "ammo": 10,
-                    "damage": 75,
-                    "cancels": "-",
-                    "cooldown": "-",
-                    "down value": 2.5,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "If you touch the ground while firing you recover boost far faster than regular landing recovery."
-                },
-                "6": {
-                    "type": "CSA",
-                    "name": "Beam Rifle",
-                    "ammo": "-",
-                    "damage": "64-137",
-                    "cancels": "-",
-                    "cooldown": 2.5,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "7": {
-                    "type": "2/8CSA",
-                    "name": "High Power Beam Rifle",
-                    "ammo": "-",
-                    "damage": 140,
-                    "cancels": "-",
-                    "cooldown": 2.5,
-                    "down value": "5^",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "special": {
+                    "0": {
+                        "name": "Last Shooting",
+                        "input": "ABC",
+                        "damage": "296/274",
+                        "notes": "Two stage super, armored dash attack then upwards shot"
+                    }
                 }
             },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBB",
-                    "damage": 182,
-                    "routes": "BC(Last Hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+            "3": {
+                "cost": 400,
+                "name": "GP03",
+                "imgsrc": "assets/imgs/GP03.png",
+                "pilots": {
+                    "0": "Kou Uraki"
                 },
-                "1": {
-                    "type": "Neutral Melee",
-                    "input": "5BBA",
-                    "damage": 184,
-                    "routes": "BC(Last Hit)",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Refills main ammo, shooting portion is not steppable"
+                "health": 620,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Folding Bazookas",
+                        "ammo": 10,
+                        "damage": "76-128",
+                        "cancels": "AB,BC",
+                        "cooldown": 6,
+                        "valueDown": 2.5,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Fires two per press, boosting early will fire a single shot"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Large Missile Pod",
+                        "ammo": 2,
+                        "damage": 75,
+                        "cancels": "DirAB",
+                        "cooldown": 9,
+                        "valueDown": "-",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Fires in a fan, shares ammo with directional AB"
+                    },
+                    "2": {
+                        "type": "DirAB",
+                        "name": "Micro Missiles",
+                        "ammo": 2,
+                        "damage": 40,
+                        "cancels": "AB",
+                        "cooldown": 9,
+                        "valueDown": "-",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Spreads out then converges, shares a cooldown with AB"
+                    },
+                    "3": {
+                        "type": "AC",
+                        "name": "Mega Beam Cannon",
+                        "ammo": 1,
+                        "damage": 235,
+                        "cancels": "-",
+                        "cooldown": 15,
+                        "valueDown": 5,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Misses point blank"
+                    },
+                    "4": {
+                        "type": "BC",
+                        "name": "Explosion Cord",
+                        "ammo": 2,
+                        "damage": 40,
+                        "cancels": "-",
+                        "cooldown": 13,
+                        "valueDown": 2,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "4/6 BC boosts you to the side/other directions including diagonals will flip you those directions.  Diving out of this move causes you to face your opponent(VERY IMPORTANT)"
+                    },
+                    "5": {
+                        "type": "BC-A",
+                        "name": "Folding Bazooka",
+                        "ammo": 10,
+                        "damage": 75,
+                        "cancels": "-",
+                        "cooldown": "-",
+                        "valueDown": 2.5,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "If you touch the ground while firing you recover boost far faster than regular landing recovery."
+                    },
+                    "6": {
+                        "type": "CSA",
+                        "name": "Beam Rifle",
+                        "ammo": "-",
+                        "damage": "64-137",
+                        "cancels": "-",
+                        "cooldown": 2.5,
+                        "valueDown": 2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "7": {
+                        "type": "2/8CSA",
+                        "name": "High Power Beam Rifle",
+                        "ammo": "-",
+                        "damage": 140,
+                        "cancels": "-",
+                        "cooldown": 2.5,
+                        "valueDown": "5^",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "2": {
-                    "type": "Forward Melee",
-                    "input": "8B",
-                    "damage": 84,
-                    "routes": "BC",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBB",
+                        "damage": 182,
+                        "routes": "BC(Last Hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Neutral Melee",
+                        "input": "5BBA",
+                        "damage": 184,
+                        "routes": "BC(Last Hit)",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Refills main ammo, shooting portion is not steppable"
+                    },
+                    "2": {
+                        "type": "Forward Melee",
+                        "input": "8B",
+                        "damage": 84,
+                        "routes": "BC",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "Side Melee",
+                        "input": "6BBB",
+                        "damage": 147,
+                        "routes": "BC(After First)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "Back Melee",
+                        "input": "2BB",
+                        "damage": 154,
+                        "routes": "BC(Last Hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "5": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8BB",
+                        "damage": 150,
+                        "routes": "BC(Last Hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "3": {
-                    "type": "Side Melee",
-                    "input": "6BBB",
-                    "damage": 147,
-                    "routes": "BC(After First)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "Back Melee",
-                    "input": "2BB",
-                    "damage": 154,
-                    "routes": "BC(Last Hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "5": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8BB",
-                    "damage": 150,
-                    "routes": "BC(Last Hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "special": {
+                    "0": {
+                        "name": "Point Blank Mega Beam Cannon",
+                        "input": "ABC",
+                        "damage": "282/263",
+                        "notes": "Armored dash attack into Mega Beam Cannon"
+                    }
                 }
             },
-            "special": {
-                "0": {
-                    "name": "Point Blank Mega Beam Cannon",
-                    "input": "ABC",
-                    "damage": "282/263",
-                    "notes": "Armored dash attack into Mega Beam Cannon"
-                }
-            }
-        },
-        "4": {
-            "cost": 500,
-            "name": "Hi-Nu",
-            "imgsrc": "assets/imgs/Hi-Nu.png",
-            "pilots": {
-                "0": "Amuro Ray"
-            },
-            "health": 700,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": 6,
-                    "damage": 75,
-                    "cancels": "See Notes",
-                    "cooldown": 3,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Cancels: AB, DirAB, AC, BC, DirBC, 2B (In Psychoframe) All Melee and BC"
+            "9": {
+                "cost": 400,
+                "name": "Providence",
+                "imgsrc": "assets/imgs/Providence.png",
+                "pilots": {
+                    "0": "Rau Le Creuset"
                 },
-                "1": {
-                    "type": "AB",
-                    "name": "Fin Funnel",
-                    "ammo": "12(24)",
-                    "damage": 30,
-                    "cancels": "DirAB, AC",
-                    "cooldown": 5,
-                    "down value": 0.9,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Fires twice in PF"
+                "health": 620,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Beam Rifle",
+                        "ammo": 7,
+                        "damage": 75,
+                        "cancels": "AB, AC, BC",
+                        "cooldown": 3,
+                        "valueDown": "",
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "DRAGOON [Deploy]",
+                        "ammo": 16,
+                        "damage": 18,
+                        "cancels": "AC",
+                        "cooldown": 3,
+                        "valueDown": "",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Funnel shoots from beside suit, does not turn around."
+                    },
+                    "2": {
+                        "type": "DirAB",
+                        "name": "DRAGOON [Chase]",
+                        "ammo": 16,
+                        "damage": 24,
+                        "cancels": "AC",
+                        "cooldown": 3,
+                        "valueDown": "",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Funnel chases target a certain distance and fires once"
+                    },
+                    "3": {
+                        "type": "AC",
+                        "name": "DRAGOON System [Beam Curtain]",
+                        "ammo": 100,
+                        "damage": 30,
+                        "cancels": "-",
+                        "cooldown": 18,
+                        "valueDown": "",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "Sets up a beam cage around target that stuns on touch. Lasts ~7 seconds."
+                    },
+                    "4": {
+                        "type": "DirAC",
+                        "name": "DRAGOON System [Retention]",
+                        "ammo": 100,
+                        "damage": "25 ~ 170~",
+                        "cancels": "-",
+                        "cooldown": 18,
+                        "valueDown": "",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "3 funnels sattelite suit. Will fire with A. Can fire independently with AC, which does not vernier or turn around. Last ~6 seconds"
+                    },
+                    "5": {
+                        "type": "CSA",
+                        "name": "Beam Rifle [High Output]",
+                        "ammo": "-",
+                        "damage": 120,
+                        "cancels": "-",
+                        "cooldown": 2.5,
+                        "valueDown": 5,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    }
                 },
-                "2": {
-                    "type": "DirAB",
-                    "name": "Fin Funnel",
-                    "ammo": "12(24)",
-                    "damage": 30,
-                    "cancels": "AB, AC",
-                    "cooldown": 5,
-                    "down value": 0.9,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Retracks then fires again in PF"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBB",
+                        "damage": 183,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Forward Melee",
+                        "input": "8B",
+                        "damage": 80,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "Side Melee",
+                        "input": "6BBB",
+                        "damage": 176,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Ground bounces"
+                    },
+                    "3": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": 90,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Horizontal whip that KDs, slow startup"
+                    },
+                    "4": {
+                        "type": "Boost Dash Melee",
+                        "input": "8CCBB",
+                        "damage": 134,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "5": {
+                        "type": "Special Melee",
+                        "input": "BC",
+                        "damage": 80,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "6": {
+                        "type": "Special Melee",
+                        "input": "6BC",
+                        "damage": 86,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "3": {
-                    "type": "AC",
-                    "name": "Nu Hyper Bazooka",
-                    "ammo": 3,
-                    "damage": 114,
-                    "cancels": "-",
-                    "cooldown": 5,
-                    "down value": 2,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Shots repeat if input is held, Only reloads at 0"
-                },
-                "4": {
-                    "type": "BC",
-                    "name": "Psychoframe Resonance",
-                    "ammo": 100,
-                    "damage": "-",
-                    "cancels": "-",
-                    "cooldown": 30,
-                    "down value": "-",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Mobility Increase"
-                },
-                "5": {
-                    "type": "CSA",
-                    "name": "Beam Rifle (High Output)",
-                    "ammo": "-",
-                    "damage": 120,
-                    "cancels": "-",
-                    "cooldown": 2,
-                    "down value": 5,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "6": {
-                    "type": "CSB",
-                    "name": "Hyper Mega Bazooka Launcher",
-                    "ammo": "-",
-                    "damage": 195,
-                    "cancels": "-",
-                    "cooldown": 2,
-                    "down value": "5^",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                }
-            },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBB",
-                    "damage": 184,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "Forward Melee",
-                    "input": "8BB",
-                    "damage": 219,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "2": {
-                    "type": "Side Melee",
-                    "input": "6BBB",
-                    "damage": 171,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "3": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": 85,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "Back Melee",
-                    "input": "2B~A",
-                    "damage": 199,
-                    "routes": "-",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Boosts back firing 2 shots with like a billion down value"
-                },
-                "5": {
-                    "type": "BD Melee",
-                    "input": "CC8BBB",
-                    "damage": 189,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "6": {
-                    "type": "BC",
-                    "input": "PF Attack",
-                    "damage": 95,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "7": {
-                    "type": "DirBC",
-                    "input": "PF Attack",
-                    "damage": 95,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "Hyper Mega Bazooka Launcher (Maximum Output)",
-                    "input": "ABC",
-                    "damage": "304/302",
-                    "notes": "Uses funnels to create a projectile barrier, then fires a gerobi"
-                }
-            }
-        },
-        "5": {
-            "cost": 500,
-            "name": "Sinanju",
-            "imgsrc": "assets/imgs/Sinanju.png",
-            "pilots": {
-                "0": "Full Frontal"
-            },
-            "health": 680,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": 1,
-                    "damage": 75,
-                    "cancels": "AB,AC,BC",
-                    "cooldown": 3,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "AB",
-                    "name": "Barrel Roll",
-                    "ammo": 4,
-                    "damage": 106,
-                    "cancels": "AB(Once)",
-                    "cooldown": 8,
-                    "down value": 2.5,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Inputting 4 or 6 will cause you to roll.  Neutral version is essentially useless."
-                },
-                "2": {
-                    "type": "AC",
-                    "name": "Meteor Kick",
-                    "ammo": "2(4)",
-                    "damage": 90,
-                    "cancels": "-",
-                    "cooldown": 9,
-                    "down value": 1.8,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Inputting (8/4/6)AC and then diving results in substantial momentum to be kept. Ammo count increases to 4 in burst."
-                },
-                "3": {
-                    "type": "CSA",
-                    "name": "Grenade Launcher",
-                    "ammo": "-",
-                    "damage": 120,
-                    "cancels": "-",
-                    "cooldown": 2.5,
-                    "down value": 5.6,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Instant KD"
-                }
-            },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBB",
-                    "damage": 184,
-                    "routes": "AC, BC",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "Neutral Melee",
-                    "input": "5BBA",
-                    "damage": 213,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Instant KD"
-                },
-                "2": {
-                    "type": "Neutral Melee",
-                    "input": "5BB8B",
-                    "damage": 244,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Ground Bounce"
-                },
-                "3": {
-                    "type": "Neutral Melee",
-                    "input": "5B[B]8B",
-                    "damage": "133-180",
-                    "routes": "AC",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "Forward Melee",
-                    "input": "8BB",
-                    "damage": 166,
-                    "routes": "AC, BC(first series)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "5": {
-                    "type": "Forward Melee",
-                    "input": "8B2B",
-                    "damage": 142,
-                    "routes": "AC",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "6": {
-                    "type": "Side Melee",
-                    "input": "6BB",
-                    "damage": 140,
-                    "routes": "AC, BC(first hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "7": {
-                    "type": "Side Melee",
-                    "input": "6B2B",
-                    "damage": 135,
-                    "routes": "AC, BC(first hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "8": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": "156(104)",
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Instant KD, if meteor spawns inside the wall the move will do less dmg and take longer."
-                },
-                "9": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8BB",
-                    "damage": 158,
-                    "routes": "AC(2nd hit)",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "10": {
-                    "type": "Special Melee",
-                    "input": "(BC)B",
-                    "damage": 206,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Blocks beams in front"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "The Return",
-                    "input": "ABC",
-                    "damage": "321/286",
-                    "notes": "Armored dash attack into melee combo"
-                },
-                "1": {
-                    "name": "Beam Rifle(Continuous Fire)",
-                    "input": "2ABC",
-                    "damage": "288/277",
-                    "notes": "Continuous shooting while rolling"
+                "special": {
+                    "0": {
+                        "name": "DRAGOON System [Simultaneous Shooting]",
+                        "input": "ABC",
+                        "damage": "300/264",
+                        "notes": "Armored dash attack into melee combo, finishes with beam fence and funnel attack"
+                    }
                 }
             }
         },
-        "6": {
-            "cost": 500,
-            "name": "Zeta",
-            "imgsrc": "assets/imgs/Zeta.png",
-            "pilots": {
-                "0": "Kamille Bidan",
-                "1": "Roux Louka"
-            },
-            "health": 700,
-            "ma": "Yes",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": 6,
-                    "damage": 75,
-                    "cancels": "AB, AC, BC, 2B",
-                    "cooldown": "Reload",
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Press main when empty to reload manually."
+        "300": {
+            "1": {
+                "cost": 300,
+                "name": "Barbatos",
+                "imgsrc": "assets/imgs/Barbatos.png",
+                "pilots": {
+                    "0": "Mikazuki Augus"
                 },
-                "1": {
-                    "type": "AB",
-                    "name": "Grenade Launcher",
-                    "ammo": 2,
-                    "damage": "76(128)",
-                    "cancels": "-",
-                    "cooldown": 4.5,
-                    "down value": "1.5 per",
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Possible to boost dash before 2nd shot to only consume one at a time."
+                "health": 540,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "300mm Smoothbore Gun",
+                        "ammo": 5,
+                        "damage": 65,
+                        "cancels": "AB, AC, BC",
+                        "cooldown": 3,
+                        "valueDown": 2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Physical"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Katana Throw",
+                        "ammo": 1,
+                        "damage": 70,
+                        "cancels": "-",
+                        "cooldown": 6,
+                        "valueDown": 2,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Heavy stagger"
+                    },
+                    "2": {
+                        "type": "AC",
+                        "name": "Command Dash",
+                        "ammo": "-",
+                        "damage": "-",
+                        "cancels": "AB, BC, B",
+                        "cooldown": "-",
+                        "valueDown": "-",
+                        "vernier": "Yes",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "AC~A",
+                        "name": "300mm Smoothbore Gun",
+                        "ammo": 5,
+                        "damage": 100,
+                        "cancels": "-",
+                        "cooldown": "-",
+                        "valueDown": 3,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Soft KD"
+                    },
+                    "4": {
+                        "type": "CSA",
+                        "name": "Mace Throw",
+                        "ammo": "-",
+                        "damage": 85,
+                        "cancels": "-",
+                        "cooldown": 2,
+                        "valueDown": 2,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "2": {
-                    "type": "AC",
-                    "name": "Hyper Mega Launcher",
-                    "ammo": 2,
-                    "damage": 130,
-                    "cancels": "BC",
-                    "cooldown": 7,
-                    "down value": 5.6,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Instant KD"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBBB",
+                        "damage": 211,
+                        "routes": "AC/BC(1-3rd hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Neutral Melee",
+                        "input": "5B8B",
+                        "damage": "234-264",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "8B can be done after 5BB and 5BBB"
+                    },
+                    "2": {
+                        "type": "Neutral Melee",
+                        "input": "5B2B",
+                        "damage": "229-243",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "2B can be done after 5BB and 5BBB, instant KD"
+                    },
+                    "3": {
+                        "type": "Forward Melee",
+                        "input": "8B",
+                        "damage": 128,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Hops slightly"
+                    },
+                    "4": {
+                        "type": "Side Melee",
+                        "input": "6BBB",
+                        "damage": 128,
+                        "routes": "AC/BC(1-2nd hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "5": {
+                        "type": "Side Melee",
+                        "input": "6B8B",
+                        "damage": "234-243",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "8B can be done after 6BB"
+                    },
+                    "6": {
+                        "type": "Side Melee",
+                        "input": "6B2B",
+                        "damage": "229-230",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "2B can be done after 6BB, instant KD"
+                    },
+                    "7": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": "-",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "Counter"
+                    },
+                    "8": {
+                        "type": "Back Melee",
+                        "input": "2B-B",
+                        "damage": 70,
+                        "routes": "-",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "9": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8BB",
+                        "damage": 124,
+                        "routes": "AC/BC(1st Hit)",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "10": {
+                        "type": "Special Melee",
+                        "input": "5BC",
+                        "damage": 90,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "11": {
+                        "type": "Special Melee",
+                        "input": "6BC",
+                        "damage": 95,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "12": {
+                        "type": "Special Melee",
+                        "input": "2/8BC",
+                        "damage": 80,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Hop"
+                    }
                 },
-                "3": {
-                    "type": "BC",
-                    "name": "Rapid Transformation",
-                    "ammo": 1,
-                    "damage": "130-192",
-                    "cancels": "AB(MA), BC(MA)",
-                    "cooldown": 6,
-                    "down value": ".8-5^",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "2B",
-                    "name": "Saber throw",
-                    "ammo": "-",
-                    "damage": 80,
-                    "cancels": "AC",
-                    "cooldown": "-",
-                    "down value": 2,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "5": {
-                    "type": "CSA",
-                    "name": "Beam Confuse",
-                    "ammo": "-",
-                    "damage": "Varied",
-                    "cancels": "-",
-                    "cooldown": 1.5,
-                    "down value": ".5-2.5",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "6": {
-                    "type": "Mobile Armor",
-                    "name": "-",
-                    "ammo": "-",
-                    "damage": "-",
-                    "cancels": "-",
-                    "cooldown": "-",
-                    "down value": "-",
-                    "vernier": "No",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "7": {
-                    "type": "A(MA)",
-                    "name": "Beam Rifle & Gun",
-                    "ammo": 2,
-                    "damage": "98-104",
-                    "cancels": "AB, BC",
-                    "cooldown": 4,
-                    "down value": 4,
-                    "vernier": "No",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "8": {
-                    "type": "AB(MA)",
-                    "name": "Grenade Launcher",
-                    "ammo": 2,
-                    "damage": "76(128)",
-                    "cancels": "-",
-                    "cooldown": 4.5,
-                    "down value": "1.5 per",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Ammo shared with AB"
-                },
-                "9": {
-                    "type": "AC(MA)",
-                    "name": "Hyper Mega Launcher",
-                    "ammo": 2,
-                    "damage": 120,
-                    "cancels": "AB, BC",
-                    "cooldown": 7,
-                    "down value": 5.6,
-                    "vernier": "No",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Ammo shared with AC"
+                "special": {
+                    "0": {
+                        "name": "Reckless Slash",
+                        "input": "ABC",
+                        "damage": "328/281",
+                        "notes": "Armored dash attack into melee combo"
+                    },
+                    "1": {
+                        "name": "Skewer",
+                        "input": "2ABC",
+                        "damage": "298/269",
+                        "notes": "Counter"
+                    }
                 }
             },
-            "fighting": {
-                "0": {
-                    "type": "Neutal Melee",
-                    "input": "5BBBBB",
-                    "damage": 232,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
+            "2": {
+                "cost": 300,
+                "name": "Exia",
+                "imgsrc": "assets/imgs/Exia.png",
+                "pilots": {
+                    "0": "Setsuna F Seiei"
                 },
-                "1": {
-                    "type": "Forward Melee",
-                    "input": "8BB",
-                    "damage": 135,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
+                "health": "520(100)",
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "GN Sword Rifle Mode",
+                        "ammo": 3,
+                        "damage": 65,
+                        "cancels": "A,AB,AC,BC",
+                        "cooldown": 4,
+                        "valueDown": 2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Chainable br"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "GN Beam Dagger",
+                        "ammo": 1,
+                        "damage": 69,
+                        "cancels": "BC, 8B",
+                        "cooldown": 3,
+                        "valueDown": ".5 each",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "4/6 chooses flip direction"
+                    },
+                    "2": {
+                        "type": "AC",
+                        "name": "Large GN Cannon",
+                        "ammo": 1,
+                        "damage": "21-180",
+                        "cancels": "-",
+                        "cooldown": 14,
+                        "valueDown": 5.1,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "CSA",
+                        "name": "GN Short Blade",
+                        "ammo": "-",
+                        "damage": 55,
+                        "cancels": "-",
+                        "cooldown": 1.5,
+                        "valueDown": 1,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "A(Repair Mode)",
+                        "name": "GN Sword Rifle Mode",
+                        "ammo": 3,
+                        "damage": 60,
+                        "cancels": "A,AB,AC,BC",
+                        "cooldown": 4,
+                        "valueDown": 2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "2": {
-                    "type": "Side Melee",
-                    "input": "6BBB",
-                    "damage": 176,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBB",
+                        "damage": 179,
+                        "routes": "AB, BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Neutral Melee",
+                        "input": "5BB8B",
+                        "damage": 207,
+                        "routes": "AB, BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "Neutral Melee",
+                        "input": "5B[B]~A",
+                        "damage": "104-151",
+                        "routes": "AB, BC, 2B",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "Neutral Melee",
+                        "input": "5BBBBB",
+                        "damage": "280/240",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Trans-Am only"
+                    },
+                    "4": {
+                        "type": "Forward Melee",
+                        "input": "8B",
+                        "damage": 77,
+                        "routes": "AB, BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "High priority"
+                    },
+                    "5": {
+                        "type": "Forward Melee",
+                        "input": "8B-A",
+                        "damage": "76-116",
+                        "routes": "AB, BC, 2B",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "6": {
+                        "type": "Side Melee",
+                        "input": "6BBB",
+                        "damage": 170,
+                        "routes": "AB, BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "7": {
+                        "type": "Side Melee",
+                        "input": "6BB8B",
+                        "damage": 206,
+                        "routes": "AB, BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "8": {
+                        "type": "Side Melee",
+                        "input": "6B[B]~A",
+                        "damage": "104~153",
+                        "routes": "AB, BC, 2B",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "9": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": 85,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Hop"
+                    },
+                    "10": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8BB",
+                        "damage": 134,
+                        "routes": "AB, BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Slashes through"
+                    },
+                    "11": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8BBBB",
+                        "damage": "268/229",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "12": {
+                        "type": "Special Melee",
+                        "input": "BC",
+                        "damage": 127,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "13": {
+                        "type": "Special Melee",
+                        "input": "6BCB",
+                        "damage": 138,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "-"
+                    },
+                    "14": {
+                        "type": "Special Melee",
+                        "input": "2/8BCB",
+                        "damage": 125,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Blocks shots in front"
+                    },
+                    "15": {
+                        "type": "Repair Mode",
+                        "input": "-",
+                        "damage": "-",
+                        "routes": "-",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "16": {
+                        "type": "Neutral Melee(R)",
+                        "input": "5BBB",
+                        "damage": 179,
+                        "routes": "BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "17": {
+                        "type": "Neutral Melee(R)",
+                        "input": "5BB8B",
+                        "damage": "?",
+                        "routes": "BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "18": {
+                        "type": "Neutral Melee(R)",
+                        "input": "5BBBBBB",
+                        "damage": "?",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Trans-Am only"
+                    },
+                    "19": {
+                        "type": "Forward Melee(R)",
+                        "input": "8B",
+                        "damage": 67,
+                        "routes": "BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "20": {
+                        "type": "Side Melee(R)",
+                        "input": "6BB",
+                        "damage": 89,
+                        "routes": "BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "21": {
+                        "type": "Back Melee(R)",
+                        "input": "2B",
+                        "damage": 85,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "Yes",
+                        "notes": "Hop"
+                    },
+                    "22": {
+                        "type": "Boost Dash Melee(R)",
+                        "input": "CC8BB",
+                        "damage": 134,
+                        "routes": "BC, 2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "23": {
+                        "type": "Boost Dash Melee(R)",
+                        "input": "CC8BBB",
+                        "damage": "??",
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Trans-Am only"
+                    },
+                    "24": {
+                        "type": "Sub/Special Shooting(R)",
+                        "input": "AB/AC",
+                        "damage": "??",
+                        "routes": "BC,2B",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "3": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8BB",
-                    "damage": 138,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "Follow Up",
-                    "input": "8B(Notes)",
-                    "damage": 60,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Input during 5B or 6B string except finisher"
-                },
-                "5": {
-                    "type": "Follow Up",
-                    "input": "AC(Notes)",
-                    "damage": 81,
-                    "routes": "BC",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Input during any non finisher melee."
-                },
-                "6": {
-                    "type": "Follow Up",
-                    "input": "BC(Notes)",
-                    "damage": 133,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Input during any non finisher melee."
-                },
-                "7": {
-                    "type": "MA Melee",
-                    "input": "B(MA)",
-                    "damage": 100,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Eligable for AC/BC Follow Up"
-                },
-                "8": {
-                    "type": "MA Special Melee",
-                    "input": "BC(MA)-B(Mash)",
-                    "damage": "113-126 (283/246)",
-                    "routes": "-",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Powers up during Blaze or Lightning."
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "Giant Beam Saber",
-                    "input": "ABC",
-                    "damage": "278/238",
-                    "notes": "Single High damage swing with super armor."
-                },
-                "1": {
-                    "name": "Burst Effect",
-                    "input": "-",
-                    "damage": "-",
-                    "notes": "Super armor on melee's in Burst."
+                "special": {
+                    "0": {
+                        "name": "GN Armor Type-E",
+                        "input": "ABC",
+                        "damage": "269/230",
+                        "notes": "Armored dash attack into melee combo"
+                    },
+                    "1": {
+                        "name": "Overboost Stab",
+                        "input": "ABC(In repair)",
+                        "damage": "???",
+                        "notes": "Delayed Armored Stab"
+                    }
                 }
             }
         },
-        "7": {
-            "cost": 200,
-            "name": "Marasai",
-            "imgsrc": "assets/imgs/Marasai.png",
-            "pilots": {
-                "0": "Jerid Messa",
-                "1": "Sarah Zabiarov"
-            },
-            "health": 440,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": 6,
-                    "damage": 65,
-                    "cancels": "A, AB, BC",
-                    "cooldown": "Reload",
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Chains up to 3 times."
+        "200": {
+            "7": {
+                "cost": 200,
+                "name": "Marasai",
+                "imgsrc": "assets/imgs/Marasai.png",
+                "pilots": {
+                    "0": "Jerid Messa",
+                    "1": "Sarah Zabiarov"
                 },
-                "1": {
-                    "type": "AB",
-                    "name": "Beam Saber",
-                    "ammo": 1,
-                    "damage": 50,
-                    "cancels": "-",
-                    "cooldown": 6,
-                    "down value": "-",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "no",
-                    "notes": "-"
+                "health": 440,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Beam Rifle",
+                        "ammo": 6,
+                        "damage": 65,
+                        "cancels": "A, AB, BC",
+                        "cooldown": "Reload",
+                        "valueDown": 2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Chains up to 3 times."
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Beam Saber",
+                        "ammo": 1,
+                        "damage": 50,
+                        "cancels": "-",
+                        "cooldown": 6,
+                        "valueDown": "-",
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "no",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "AB-B",
+                        "name": "Flying kick",
+                        "ammo": "-",
+                        "damage": 110,
+                        "cancels": "-",
+                        "cooldown": "-",
+                        "valueDown": 5.6,
+                        "vernier": "Yes",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Melee follow up after sub toss"
+                    },
+                    "3": {
+                        "type": "AC",
+                        "name": "Fedayeen Rifle [Blast]",
+                        "ammo": 1,
+                        "damage": "16-193",
+                        "cancels": "-",
+                        "cooldown": 11,
+                        "valueDown": 5.1,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "BC",
+                        "name": "Manual Reload",
+                        "ammo": "-",
+                        "damage": "-",
+                        "cancels": "-",
+                        "cooldown": "-",
+                        "valueDown": "-",
+                        "vernier": "No",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Reload main ammo"
+                    },
+                    "5": {
+                        "type": "CSA",
+                        "name": "Fedayeen Rifle",
+                        "ammo": "-",
+                        "damage": 120,
+                        "cancels": "-",
+                        "cooldown": 2.5,
+                        "valueDown": 5.6,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Instant KD"
+                    }
                 },
-                "2": {
-                    "type": "AB-B",
-                    "name": "Flying kick",
-                    "ammo": "-",
-                    "damage": 110,
-                    "cancels": "-",
-                    "cooldown": "-",
-                    "down value": 5.6,
-                    "vernier": "Yes",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Melee follow up after sub toss"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BBB",
+                        "damage": 173,
+                        "routes": "AB",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Forward Melee",
+                        "input": "8B",
+                        "damage": 79,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "Side Melee",
+                        "input": "6BB",
+                        "damage": 125,
+                        "routes": "AB",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": 75,
+                        "routes": "AB",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8B",
+                        "damage": 130,
+                        "routes": "AB",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "3": {
-                    "type": "AC",
-                    "name": "Fedayeen Rifle [Blast]",
-                    "ammo": 1,
-                    "damage": "16-193",
-                    "cancels": "-",
-                    "cooldown": 11,
-                    "down value": 5.1,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "BC",
-                    "name": "Manual Reload",
-                    "ammo": "-",
-                    "damage": "-",
-                    "cancels": "-",
-                    "cooldown": "-",
-                    "down value": "-",
-                    "vernier": "No",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Reload main ammo"
-                },
-                "5": {
-                    "type": "CSA",
-                    "name": "Fedayeen Rifle",
-                    "ammo": "-",
-                    "damage": 120,
-                    "cancels": "-",
-                    "cooldown": 2.5,
-                    "down value": 5.6,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Instant KD"
+                "special": {
+                    "0": {
+                        "name": "Fedayeen Rifle [Max Output]",
+                        "input": "ABC",
+                        "damage": "238/236",
+                        "notes": "Stronger version of regular AC."
+                    }
                 }
             },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBB",
-                    "damage": 173,
-                    "routes": "AB",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+            "8": {
+                "cost": 200,
+                "name": "Nemo",
+                "imgsrc": "assets/imgs/Nemo.png",
+                "pilots": {
+                    "0": "Fa Yuiry"
                 },
-                "1": {
-                    "type": "Forward Melee",
-                    "input": "8B",
-                    "damage": 79,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "health": 440,
+                "ma": "No",
+                "shooting": {
+                    "0": {
+                        "type": "A",
+                        "name": "Beam Rifle",
+                        "ammo": 5,
+                        "damage": 65,
+                        "cancels": "AC, BC",
+                        "cooldown": 3,
+                        "valueDown": 2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "AB",
+                        "name": "Vulcan",
+                        "ammo": 60,
+                        "damage": "10-140",
+                        "cancels": "BC",
+                        "cooldown": 5,
+                        "valueDown": 0.2,
+                        "vernier": "No",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "2": {
+                        "type": "AC",
+                        "name": "Beam Rifle [Auto]",
+                        "ammo": 1,
+                        "damage": "60-144",
+                        "cancels": "-",
+                        "cooldown": 5,
+                        "valueDown": 5.1,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Hold 4/6 to move Left/Right"
+                    },
+                    "3": {
+                        "type": "BC",
+                        "name": "Sealant Launcher",
+                        "ammo": 3,
+                        "damage": 50,
+                        "cancels": "-",
+                        "cooldown": 5,
+                        "valueDown": 1,
+                        "vernier": "Yes",
+                        "steppable": "No",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "Slows target briefly"
+                    }
                 },
-                "2": {
-                    "type": "Side Melee",
-                    "input": "6BB",
-                    "damage": 125,
-                    "routes": "AB",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
+                "fighting": {
+                    "0": {
+                        "type": "Neutral Melee",
+                        "input": "5BB",
+                        "damage": 129,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "1": {
+                        "type": "Forward Melee",
+                        "input": "8B",
+                        "damage": 70,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "Hard to follow up"
+                    },
+                    "2": {
+                        "type": "Side Melee",
+                        "input": "6BB",
+                        "damage": 123,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "3": {
+                        "type": "Back Melee",
+                        "input": "2B",
+                        "damage": 70,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "No",
+                        "untechable": "No",
+                        "notes": "-"
+                    },
+                    "4": {
+                        "type": "Boost Dash Melee",
+                        "input": "CC8B",
+                        "damage": 127,
+                        "routes": "-",
+                        "steppable": "Yes",
+                        "stun": "Yes",
+                        "untechable": "No",
+                        "notes": "-"
+                    }
                 },
-                "3": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": 75,
-                    "routes": "AB",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8B",
-                    "damage": 130,
-                    "routes": "AB",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "Fedayeen Rifle [Max Output]",
-                    "input": "ABC",
-                    "damage": "238/236",
-                    "notes": "Stronger version of regular AC."
-                }
-            }
-        },
-        "8": {
-            "cost": 200,
-            "name": "Nemo",
-            "imgsrc": "assets/imgs/Nemo.png",
-            "pilots": {
-                "0": "Fa Yuiry"
-            },
-            "health": 440,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": 5,
-                    "damage": 65,
-                    "cancels": "AC, BC",
-                    "cooldown": 3,
-                    "down value": 2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "AB",
-                    "name": "Vulcan",
-                    "ammo": 60,
-                    "damage": "10-140",
-                    "cancels": "BC",
-                    "cooldown": 5,
-                    "down value": 0.2,
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "2": {
-                    "type": "AC",
-                    "name": "Beam Rifle [Auto]",
-                    "ammo": 1,
-                    "damage": "60-144",
-                    "cancels": "-",
-                    "cooldown": 5,
-                    "down value": 5.1,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Hold 4/6 to move Left/Right"
-                },
-                "3": {
-                    "type": "BC",
-                    "name": "Sealant Launcher",
-                    "ammo": 3,
-                    "damage": 50,
-                    "cancels": "-",
-                    "cooldown": 5,
-                    "down value": 1,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Slows target briefly"
-                }
-            },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BB",
-                    "damage": 129,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "Forward Melee",
-                    "input": "8B",
-                    "damage": 70,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Hard to follow up"
-                },
-                "2": {
-                    "type": "Side Melee",
-                    "input": "6BB",
-                    "damage": 123,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "3": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": 70,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "4": {
-                    "type": "Boost Dash Melee",
-                    "input": "CC8B",
-                    "damage": 127,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "-"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "Dodai Ride & Attack",
-                    "input": "ABC",
-                    "damage": "272/252",
-                    "notes": "Armored Dash attack into melee combo"
-                }
-            }
-        },
-        "9": {
-            "cost": 400,
-            "name": "Providence",
-            "imgsrc": "assets/imgs/Providence.png",
-            "pilots": {
-                "0": "Rau Le Creuset"
-            },
-            "health": 620,
-            "ma": "No",
-            "shooting": {
-                "0": {
-                    "type": "A",
-                    "name": "Beam Rifle",
-                    "ammo": 7,
-                    "damage": 75,
-                    "cancels": "AB, AC, BC",
-                    "cooldown": 3,
-                    "down value": "",
-                    "vernier": "No",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "AB",
-                    "name": "DRAGOON [Deploy]",
-                    "ammo": 16,
-                    "damage": 18,
-                    "cancels": "AC",
-                    "cooldown": 3,
-                    "down value": "",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Funnel shoots from beside suit, does not turn around."
-                },
-                "2": {
-                    "type": "DirAB",
-                    "name": "DRAGOON [Chase]",
-                    "ammo": 16,
-                    "damage": 24,
-                    "cancels": "AC",
-                    "cooldown": 3,
-                    "down value": "",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Funnel chases target a certain distance and fires once"
-                },
-                "3": {
-                    "type": "AC",
-                    "name": "DRAGOON System [Beam Curtain]",
-                    "ammo": 100,
-                    "damage": 30,
-                    "cancels": "-",
-                    "cooldown": 18,
-                    "down value": "",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "Sets up a beam cage around target that stuns on touch. Lasts ~7 seconds."
-                },
-                "4": {
-                    "type": "DirAC",
-                    "name": "DRAGOON System [Retention]",
-                    "ammo": 100,
-                    "damage": "25 ~ 170~",
-                    "cancels": "-",
-                    "cooldown": 18,
-                    "down value": "",
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "Yes",
-                    "untechable": "No",
-                    "notes": "3 funnels sattelite suit. Will fire with A. Can fire independently with AC, which does not vernier or turn around. Last ~6 seconds"
-                },
-                "5": {
-                    "type": "CSA",
-                    "name": "Beam Rifle [High Output]",
-                    "ammo": "-",
-                    "damage": 120,
-                    "cancels": "-",
-                    "cooldown": 2.5,
-                    "down value": 5,
-                    "vernier": "Yes",
-                    "steppable": "No",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                }
-            },
-            "fighting": {
-                "0": {
-                    "type": "Neutral Melee",
-                    "input": "5BBB",
-                    "damage": 183,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "1": {
-                    "type": "Forward Melee",
-                    "input": "8B",
-                    "damage": 80,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                },
-                "2": {
-                    "type": "Side Melee",
-                    "input": "6BBB",
-                    "damage": 176,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "Ground bounces"
-                },
-                "3": {
-                    "type": "Back Melee",
-                    "input": "2B",
-                    "damage": 90,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "Horizontal whip that KDs, slow startup"
-                },
-                "4": {
-                    "type": "Boost Dash Melee",
-                    "input": "8CCBB",
-                    "damage": 134,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "5": {
-                    "type": "Special Melee",
-                    "input": "BC",
-                    "damage": 80,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "Yes",
-                    "notes": "-"
-                },
-                "6": {
-                    "type": "Special Melee",
-                    "input": "6BC",
-                    "damage": 86,
-                    "routes": "-",
-                    "steppable": "Yes",
-                    "stun": "No",
-                    "untechable": "No",
-                    "notes": "-"
-                }
-            },
-            "special": {
-                "0": {
-                    "name": "DRAGOON System [Simultaneous Shooting]",
-                    "input": "ABC",
-                    "damage": "300/264",
-                    "notes": "Armored dash attack into melee combo, finishes with beam fence and funnel attack"
+                "special": {
+                    "0": {
+                        "name": "Dodai Ride & Attack",
+                        "input": "ABC",
+                        "damage": "272/252",
+                        "notes": "Armored Dash attack into melee combo"
+                    }
                 }
             }
         }

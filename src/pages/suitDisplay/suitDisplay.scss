@@ -40,7 +40,8 @@ suitDisplay{
         background-image: linear-gradient(
             to bottom right,  
             color($colors, background-gradient, base) 0%, 
-            color($colors, background-gradient, contrast) 100%);        
+            color($colors, background-gradient, contrast) 100%);  
+        font-size: small;
     }
     .odd {        
         border-top: 2px solid color($colors, shadow);

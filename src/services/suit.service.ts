@@ -6,20 +6,20 @@ import { AngularFireDatabase } from 'angularfire2/database';
 export class SuitService{
     constructor ( public afdb: AngularFireDatabase) {} 
 
-    public getPilots(suitId): Observable<any> {               
-        return this.afdb.list(`/Suits/${suitId}/pilots`).valueChanges(); //unpack the pilots
+    public getPilots(cost,suitId): Observable<any> {               
+        return this.afdb.list(`/Suits/${cost}/${suitId}/pilots`).valueChanges(); //unpack the pilots
     }
-    public getSuit(suitId): Observable<any> {
-        return this.afdb.object(`/Suits/${suitId}`).valueChanges();
+    /*public getSuit(cost,suitId): Observable<any> {
+        return this.afdb.object(`/Suits/${cost}/${suitId}`).valueChanges();
+    }*/
+    public getRanged(cost, suitId): Observable<any> {               
+        return this.afdb.list(`/Suits/${cost}/${suitId}/shooting`).valueChanges(); //unpack the ranged
     }
-    public getRanged(suitId): Observable<any> {               
-        return this.afdb.list(`/Suits/${suitId}/shooting`).valueChanges(); //unpack the ranged
+    public getMelee(cost, suitId): Observable<any> {
+        return this.afdb.list(`/Suits/${cost}/${suitId}/fighting`).valueChanges();
     }
-    public getMelee(suitId): Observable<any> {
-        return this.afdb.list(`/Suits/${suitId}/fighting`).valueChanges();
-    }
-    public getSpecials(suitId): Observable<any> {
-        return this.afdb.list(`/Suits/${suitId}/special`).valueChanges();
+    public getSpecials(cost, suitId): Observable<any> {
+        return this.afdb.list(`/Suits/${cost}/${suitId}/special`).valueChanges();
     }
     /*getSuit(suitId) {
         return Observable.combineLatest(

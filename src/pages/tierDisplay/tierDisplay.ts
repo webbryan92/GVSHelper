@@ -23,22 +23,11 @@ export class TierPage implements OnInit {
       this.id = params.data.costId;
   }
   getSuits(): void {
-    this.suits = this.tierService.getTier();
+    this.suits = this.tierService.getTier(this.id);
   }
   ngOnInit(): void {
     this.getSuits();
-  }
-  filter(suit) : boolean{
-    if (suit.payload.val().cost === Number(this.id)){
-      return true;
-    }
-    return false;
-  }
-  viewSuit(suit){
-    this.navCtrl.push(SuitPage, {
-      suit:suit
-    });
-  }
+  } 
   viewHP(){
     this.navCtrl.push(HPPage, {cost:this.id});
   }

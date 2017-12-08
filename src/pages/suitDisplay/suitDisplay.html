@@ -31,6 +31,14 @@
   <ion-grid>
     <ion-row>
       <ion-col>
+        <b>Health:</b> {{suit.health}}
+      </ion-col>
+      <ion-col>
+        <b>Mobile Armor:</b> {{suit.ma}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
         <img src="assets/imgs/Step.png">
         = Steppable
       </ion-col>
@@ -85,6 +93,12 @@
         </tr>
         <ng-container *ngIf="shot.expanded">
           <tr class="dropdown">
+                <th colspan = "2">Cooldown</th>
+                <td>{{shot.cooldown}}</td>
+                <th>Down Value</th>
+                <td colspan = "2">{{shot.valueDown}}</td>
+          </tr>
+          <tr class="dropdown">            
             <th colspan="2" align-left>Notes</th>
             <td>
               <img *ngIf="(shot.steppable) === 'Yes'" src="assets/imgs/Step.png">
@@ -93,7 +107,7 @@
               <img *ngIf="(shot.vernier) === 'Yes'" src="assets/imgs/Vernier.png">
             </td>
             <td colspan="3">{{shot.notes}}</td>
-          </tr>
+          </tr>          
         </ng-container>
       </ng-container>
     </tbody>

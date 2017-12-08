@@ -5,7 +5,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 @Injectable()
 export class TierService{
     constructor ( public afdb: AngularFireDatabase) {}    
-    getTier(): Observable<any> {
-        return this.afdb.list('/Suits').snapshotChanges();
+    getTier(tier): Observable<any> {
+        return this.afdb.list(`/Suits/${tier}`, ref => ref.orderByChild('name')).snapshotChanges();
     }
 }
