@@ -10,8 +10,6 @@ import { TierPage } from '../pages/tierDisplay/tierDisplay';
 import { SuitPage } from '../pages/suitDisplay/suitDisplay';
 import { HPPage } from '../pages/health/health';
 
-import { SuitGridItemComponent } from '../components';
-
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -28,8 +26,7 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     SuitPage,
     TabsPage,
     TermsDisplayPage,
-    HPPage,
-    SuitGridItemComponent
+    HPPage
   ],
   imports: [
     BrowserModule,
@@ -45,8 +42,7 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     SuitPage,
     TabsPage,
     TermsDisplayPage,
-    HPPage,
-    SuitGridItemComponent
+    HPPage
   ],
   providers: [
     StatusBar,

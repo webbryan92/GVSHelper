@@ -18,6 +18,7 @@ export class TierPage implements OnInit {
   id: any;  
   suits: Observable<any>;
   suitNames: string[];
+  suitSrc: any;
   constructor(public navCtrl: NavController, public params: NavParams, private tierService: TierService) {
       this.params = params;
       this.id = params.data.costId;
@@ -30,5 +31,10 @@ export class TierPage implements OnInit {
   } 
   viewHP(){
     this.navCtrl.push(HPPage, {cost:this.id});
+  }
+  public viewSuit(suit){
+    this.navCtrl.push(SuitPage, {
+      suit:suit
+    });
   }
 }

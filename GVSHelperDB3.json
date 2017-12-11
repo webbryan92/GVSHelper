@@ -2038,7 +2038,7 @@
             "7": {
                 "cost": 200,
                 "name": "Marasai",
-                "imgsrc": "assets/imgs/Marasai.png",
+                "imgsrc": "assets/imgs/Marasai_icon.png",
                 "pilots": {
                     "0": "Jerid Messa",
                     "1": "Sarah Zabiarov"
