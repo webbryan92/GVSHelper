@@ -33,3 +33,8 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+src/environment.ts
+GVSHelperDB.json
+GVSHelperDB2.json
+GVSHelperDB3.json
+GVSHelperDB4.json
